@@ -1,0 +1,69 @@
+@use '../variables' as *;
+
+/* Tło */
+
+.bg-primary{
+    background-color: $primary-color;
+}
+.bg-secondary{
+    background-color: $secondary-color;
+}
+.bg-third{
+    background-color: $third-color;
+}
+.bg-fourth{
+    background-color: $fourth-color;
+}
+.bg-transparent{
+    background: $transparent;
+}
+.bg-primary-gradient{
+    background-image: $primary-gradient;
+}
+.bg-secondary-gradient{
+    background-image: $secondary-gradient;
+}
+.bg-white{
+    background-color: $white;
+}
+.bg-black{
+    background-color: $black;
+}
+.bg-black75{
+    background-color: $black75;
+}
+.bg-black50{
+    background-color: $black50;
+}
+.bg-black25{
+    background-color: $black25;
+}
+.bg-black10{
+    background-color: $black10;
+}
+.bg-black5{
+    background-color: $black5;
+}
+.bg-true-black{
+    background-color: $true-black;
+}
+.bg-gray{
+    background-color: $disable;
+}
+.bg-white75{
+    background-color: $white75;
+}
+.bg-white50{
+    background-color: $white50;
+}
+.bg-white25{
+    background-color: $white25;
+}
+.bg-white10{
+    background-color: $white10;
+}
+.bg-white5{
+    background-color: $white5;
+}
+
+/* -------------------------------------------------------------------------- */

@@ -1,0 +1,137 @@
+@use '../variables' as *;
+
+/* Padding */
+
+        /* Responsywny padding strony */
+
+        .gen-padding{
+            padding: $gen-padding;
+        }
+
+            /* Padding strony na tabletach */
+
+            @media all and (max-width:900px){
+                .gen-padding{
+                    padding: $tab-padding;
+                }
+            } 
+
+            /* Padding strony na telefonach */
+            
+            @media all and (max-width:640px){
+                .gen-padding{
+                    padding: $mob-padding;
+                }
+            }
+
+        /* ------------------------------------------- */
+
+        /* Lewy & Prawy */
+
+            .lr-padding-128{
+                padding: 0 128px;
+            }
+            .lr-padding-64{
+                padding: 0 64px;
+            }
+            .lr-padding-48{
+                padding: 0 48px;
+            }
+            .lr-padding-32{
+                padding: 0 32px;
+            }
+            .lr-padding-16{
+                padding: 0 16px;
+            }
+            .lr-padding-8{
+                padding: 0 8px;
+            }
+
+        /* ------------------------------------------- */
+
+        /* Górny & Dolny */
+
+            .tb-padding-128{
+                padding: 128px 0;
+            }
+            .tb-padding-64{
+                padding: 64px 0;
+            }
+            .tb-padding-48{
+                padding: 48px 0;
+            }
+            .tb-padding-32{
+                padding: 32px 0;
+            }
+            .tb-padding-16{
+                padding: 16px 0;
+            }
+            .tb-padding-8{
+                padding: 8px 0;
+            }
+
+        /* ------------------------------------------- */
+
+        /* Ogólne */
+
+            .padding-256{
+                padding: 256px;
+            }
+            .padding-128{
+                padding: 128px;
+            }
+            .padding-64{
+                padding: 64px;
+            }
+            .padding-48{
+                padding: 48px;
+            }
+            .padding-32{
+                padding: 32px;
+            }
+            .padding-16{
+                padding: 16px;
+            }
+            .padding-8{
+                padding: 8px;
+            }
+
+        /* ------------------------------------------- */
+
+        /* Lewy */
+
+            .padding-left-128{
+                padding-left: 128px;
+            }
+            .padding-left-0{
+                padding-left: 0 !important;
+            }
+
+        /* ------------------------------------------- */
+
+        /* Prawy */
+
+            .padding-right-128{
+                padding-right: 128px;
+            }
+            .padding-right-0{
+                padding-right: 0 !important;
+            }
+
+        /* ------------------------------------------- */
+
+        /* Górny */
+
+        .padding-top-0{
+            padding-top: 0 !important;
+        }
+
+        /* ------------------------------------------- */
+
+        /* Dolny */
+        
+        .padding-bottom-0{
+            padding-bottom: 0 !important;
+        }
+
+        /* -------------------------------------------------------------------------- */

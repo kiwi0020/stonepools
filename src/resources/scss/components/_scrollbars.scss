@@ -1,0 +1,16 @@
+@use '../variables' as *;
+
+/* Scrollbar */ 
+
+body::-webkit-scrollbar{
+    width: 15px;
+    background-color: $black10;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #fff;    /* Kolor suwaka */
+}
+body::-webkit-scrollbar-thumb:hover{
+    background-color: #fff;    /* Kolor suwaka po najechaniu */
+}
+
+/* -------------------------------------------------------------------------- */

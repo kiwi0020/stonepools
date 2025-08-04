@@ -1,0 +1,23 @@
+@use '../variables' as *;
+
+.testimonial{
+
+    .testimonial-prev, .testimonial-next{
+        border: 1px solid $black10;
+        padding: 23px 26px 21px 26px;
+        border-radius: 24px;
+        cursor: pointer;
+        background-color: $white;
+        box-shadow: 0 0 8px 4px $black5;
+        transition: all .1s ease-in-out;
+        &:hover{
+            background-color: $black;
+        }
+    }
+
+    @media all and (max-width: 700px){
+        .testimonial-slider{
+            justify-content: center !important;
+        }
+    }
+}

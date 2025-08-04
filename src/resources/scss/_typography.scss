@@ -1,0 +1,194 @@
+@use 'breakpoints' as bp;
+@use 'variables' as *;
+
+/* Wielkości czcionek */
+
+html{
+    font-size: 16px;    // Wielkość czcionki dla jednostki REM 
+
+    @include bp.lg{
+        font-size: 14px;
+    }
+    @include bp.min-xxl{
+        font-size: 18.5px;
+    }
+    @include bp.min-xxxl{
+        font-size: 21px;
+    }
+}
+
+/* Typografia właściwa  */
+
+h1,h2,h3,h4,h5{
+    color: $black;
+}
+h1{
+    font-size: $font-size-xxl;
+}
+h2{
+    font-size: $font-size-xl;
+}
+h3{
+    font-size: $font-size-lg;
+}
+h4{
+    font-size: $font-size-md;
+}
+h5{
+    font-size: $base-font-size;
+}
+.h-semi{
+    font-family: $header-font;
+    font-weight: bold;
+}
+.h-reg{
+    font-family: $header-font;
+    font-weight: 400;
+}
+.h-decor{
+    font-family: $header-font-decor;
+    font-weight: 400;
+}
+p{
+    font-family: $paragraph-font;
+    color: $black75;
+    font-size: $base-font-size;
+    line-height: 2rem;
+    text-align: left;
+    letter-spacing: 1px;
+}
+a{
+    text-decoration: none; 
+}
+
+    /* Wielkość czcionek */
+
+        .font-size-sm{
+            font-size: $font-size-sm;
+        }
+        .font-size-md{
+            font-size: $font-size-md;
+        }
+        .font-size-lg{
+            font-size: $font-size-lg;
+        }
+        .font-size-xl{
+            font-size: $font-size-xl;
+        }
+        .font-size-xxl{
+            font-size: $font-size-xxl;
+        }
+
+    /* ---------------------- */
+
+    /* Położenie czcionki */
+
+        .txt-center{
+            text-align: center;
+        }
+        .txt-left{
+            text-align: left;
+        }
+        .txt-right{
+            text-align: right;
+        }
+        .txt-justify{
+            text-align: justify;
+        }
+
+    /* -------------------------------------------------------------------------- */
+
+    /* Kolory czcionek */
+
+        .font-white{
+            color: $white;
+        }
+        .font-black{
+            color: $black;
+        }
+        .font-primary{
+            color: $primary-color;
+        }
+        .font-secondary{
+            color: $secondary-color;
+        }
+        .font-third{
+            color: $third-color;
+        }
+        .font-fourth{
+            color: $fourth-color;
+        }
+        .error{
+            color: $error;
+        }
+        .confirm{
+            color: $confirm;
+        }
+        .font-notification{
+            color: $notification;
+        }
+        .font-gray{
+            color: $disable;
+        }
+        
+    /* -------------------------------------------------------------------------- */
+
+    /* Rodzaje czcionek */
+
+    .font-header{
+        font-family: $header-font;
+    }
+
+    /* -------------------------------------------------------------------------- */
+
+    /* Efekty i dekoracje */
+
+    .txt-underline{
+        text-decoration: underline;
+    }
+
+    /* -------------------------------------------------------------------------- */
+
+    /* Skracanei wersów  */
+
+    .cut-text-to-1{
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        -webkit-line-clamp: 1;
+        text-overflow: ellipsis;
+    }
+
+    .cut-text-to-2{
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        -webkit-line-clamp: 2;
+        text-overflow: ellipsis;
+    }
+
+    .cut-text-to-3{
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        -webkit-line-clamp: 3;
+        text-overflow: ellipsis;
+    }
+
+    .cut-text-to-4{
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        -webkit-line-clamp: 4;
+        text-overflow: ellipsis;
+    }
+
+    .cut-text-to-5{
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        -webkit-line-clamp: 5;
+        text-overflow: ellipsis;
+    }
+
+ /* -------------------------------------------------------------------------- */

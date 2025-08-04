@@ -1,0 +1,84 @@
+// Variables & Functions
+
+@use 'variables' as *;
+@use 'functions';
+
+// Typography
+
+@use 'typography';
+
+// Utilities (Margin, Padding. Widths, Heights, Backgrounds, Displays, Positions)
+
+@use 'utilities/margin';
+@use 'utilities/padding';
+@use 'utilities/widths';
+@use 'utilities/heights';
+@use 'utilities/backgrounds';
+@use 'utilities/displays';
+@use 'utilities/positions';
+
+// Decorations (Borders, Effects, Shadows)
+
+@use 'decorations/borders';
+@use 'decorations/effects';
+@use 'decorations/shadows';
+
+// Components (Scrollbar, Lines, Buttons)
+
+@use 'components/scrollbars';
+@use 'components/lines';
+@use 'components/buttons';
+@use 'components/lists';
+@use 'components/loading-bars';
+
+// Containers (Containers, Flex Atributes, Gaps, Flex Containers, Grid)
+
+@use 'flex';
+@use 'grid';
+
+// Sections (Navbar, Footer, Hero, Content, Testimonials, Contact Forms, Other Forms, Sliders, Notifications, CTA, Cards)  
+
+@use 'sections/navbar';
+@use 'sections/footer';
+@use 'sections/hero';
+@use 'sections/content';
+@use 'sections/testimonials';
+@use 'sections/contact-form';
+@use 'sections/other-forms';
+@use 'sections/notifications';
+@use 'sections/sliders';
+@use 'sections/cta';
+@use 'sections/cards';
+@use 'sections/faq';
+@use 'sections/blog';
+
+// Animations
+
+@use 'animations';
+
+// Errors (400, 401, 403, 404, 500, 503)
+
+@use 'error';
+
+// Media Queries
+
+@use 'breakpoints';
+
+// Font Import
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');;
+
+// Base Styles
+
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    html{
+        scroll-behavior: smooth; 
+    }
+    body{
+        background-color: $white;
+        overflow-x: hidden;
+    }

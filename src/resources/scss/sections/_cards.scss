@@ -1,0 +1,36 @@
+@use '../variables' as *;
+// Karta ze zdjęciem realizacji
+
+.realisation-card{
+    background-color: $white;
+    border-radius: 16px;
+    width: 300px;
+    height: 300px;
+}
+
+
+// Karta opinii
+
+.testimonial-card{
+    width: 450px;
+    box-shadow: 0 0 16px 8px $black5;
+    border-radius: 16px;
+    background-color: $white;
+    padding: 24px 32px;
+}
+
+// Karta produktu
+
+.product-card{
+    >div{
+        .product-card-image{
+            width: 250px;
+            img{
+                width: 100%;
+            }
+        }
+        &:nth-child(2){
+            width: calc(100% - 250px);
+        }
+    }
+}

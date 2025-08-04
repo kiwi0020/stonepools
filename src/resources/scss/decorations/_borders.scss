@@ -1,0 +1,52 @@
+@use '../variables' as *;
+
+/* Obramówki */
+
+    .primary-border{
+        border: 1px solid $primary-color;
+    }
+    .secondary-border{
+        border: 1px solid $secondary-color;
+    }
+    .transparent-border{
+        border: 1px solid $transparent;
+    }
+    .black-border{
+        border: 1px solid $black;
+    }
+    .black-border-2{
+        border: 2px solid $black;
+    }
+    .black-border-3{
+        border: 3px solid $black;
+    }
+    .black50-border{
+        border: 1px solid $black50;
+    }
+    .white50-border{
+        border: 1px solid $white50;
+    }
+
+    
+
+/* ----------- */
+
+/* Zaokrąglenie obramówek */
+
+    .border-rds-8{
+        border-radius: 8px;
+    }
+    .border-rds-16{
+        border-radius: 16px;
+    }
+    .border-rds-32{
+        border-radius: 32px;
+    }
+    .border-rds-64{
+        border-radius: 64px;
+    }
+    .border-rds-max{
+        border-radius: 50%;
+    }
+
+/* ------------------------ */

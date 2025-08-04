@@ -1,0 +1,15 @@
+@use '../variables' as *;
+
+/* Cienie */
+
+.primary-shadow{
+        
+}
+.secondary-shadow{
+
+}
+.pure-shadow{
+    box-shadow: 0 0 16px 8px $black5;
+}
+
+/* -------------------------------------------------------------------------- */

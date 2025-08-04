@@ -1,0 +1,7 @@
+@use '../variables' as *;
+
+footer{
+    p{
+        font-family: $header-font !important;
+    }
+}

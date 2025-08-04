@@ -1,0 +1,109 @@
+@use '../variables' as *;
+
+/* Marginesy */
+
+        /* Lewy & Prawy */
+
+        .lr-margin-128{
+            margin: 0 128px;
+        }
+        .lr-margin-64{
+            margin: 0 64px;
+        }
+        .lr-margin-48{
+            margin: 0 48px;
+        }
+        .lr-margin-32{
+            margin: 0 32px;
+        }
+        .lr-margin-16{
+            margin: 0 16px;
+        }
+        .lr-margin-8{
+            margin: 0 8px;
+        }
+
+        /* ------------------------------------------- */
+
+        /* Górny & Dolny */
+
+        .tb-margin-128{
+            margin: 128px 0;
+        }
+        .tb-margin-64{
+            margin: 64px 0;
+        }
+        .tb-margin-48{
+            margin: 48px 0;
+        }
+        .tb-margin-32{
+            margin: 32px 0;
+        }
+        .tb-margin-16{
+            margin: 16px 0;
+        }
+        .tb-margin-8{
+            margin: 8px 0;
+        }
+
+        /* ------------------------------------------- */
+
+        /* Ogólny */
+        .margin-128{
+            margin: 128px;
+        }
+        .margin-64{
+            margin: 64px;
+        }
+        .margin-48{
+            margin: 48px;
+        }
+        .margin-32{
+            margin: 32px;
+        }
+        .margin-16{
+            margin: 16px;
+        }
+        .margin-8{
+            margin: 8px;
+        }
+
+        /* ------------------------------------------- */
+
+        /* Lewy */
+
+        .margin-left-128{
+            margin-left: 128px;
+        }
+        .padding-left-0{
+            margin-left: 0 !important;
+        }
+
+        /* ------------------------------------------- */
+
+        /* Prawy */
+
+        .margin-right-128{
+            margin-right: 128px;
+        }
+        .margin-right-0{
+            margin-right: 0 !important;
+        }
+
+        /* ------------------------------------------- */
+
+        /* Górny */
+
+        .margin-top-0{
+            margin-top: 0 !important;
+        }
+
+        /* ------------------------------------------- */
+
+        /* Dolny */
+
+        .margin-bottom-0{
+            margin-bottom: 0 !important;
+        }
+
+        /* ------------------------------------------- */

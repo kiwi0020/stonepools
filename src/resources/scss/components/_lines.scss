@@ -1,0 +1,29 @@
+@use '../variables' as *;
+/* Linie */
+
+div.line-128-prime, div.line-128-sec, div.line-128-custom{
+    width: 128px;
+    height: 2px;
+}
+div.line-512-prime, div.line-512-sec, div.line-512-custom{
+    width: 512px;
+    height: 2px;
+}
+div.line-max-prime, div.line-max-sec, div.line-max-custom{
+    width: 100%;
+    height: 2px;
+}
+div.line-128-prime, div.line-512-prime, div.line-max-prime{
+    background-color: $primary-color;
+}
+div.line-128-sec, div.line-512-sec, div.line-max-sec{
+    background-color:$secondary-color;
+}
+
+@media all and (max-width:513px){
+    div.line-512-prime, div.line-512-sec, div.line-max-prime, div.line-max-sec, div.line-512-custom, div.line-max-custom{
+        width: 128px;
+    }
+}
+
+/* -------------------------------------------------------------------------- */

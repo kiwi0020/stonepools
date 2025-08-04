@@ -1,0 +1,91 @@
+// Key Colors
+
+    $primary-color: #32B7DC;
+    $secondary-color: #6BD5E3;
+    $third-color: #F8F9FA;
+    $fourth-color: #fff;
+
+// ---------------
+
+// White Variations
+
+    $true-white: #fff;
+    $white: #F8F9FA;
+    $white75: #F8F9FABF;
+    $white50: #F8F9FA80;
+    $white25: #F8F9FA40;
+    $white10: #F8F9FA1A;
+    $white5: #F8F9FA0D;
+
+// ---------------
+
+// Black Variations
+
+    $true-black: #000;
+    $black: #343A40;
+    $black75: #343A40BF;
+    $black50: #343A4080;
+    $black25: #343A4040;
+    $black10: #343A401A;
+    $black5: #343A400D;
+
+// ----------------
+
+// Status Colors
+
+    $error: #DC3545;
+    $confirm: #28A745;
+    $notification: #3C8FDD;
+    $disable: #CFCFCF;
+
+// --------------
+
+// Other Colors
+
+    $transparent: transparent;
+
+// --------------
+
+// Gradients
+
+    $primary-gradient:
+        linear-gradient(
+            to right,
+            $primary-color,
+            $secondary-color
+        );
+    $secondary-gradient:
+        linear-gradient(
+            to right,
+            $third-color,
+            $fourth-color
+        );
+
+// --------------
+
+// Fonts
+
+    $header-font: "Montserrat", sans-serif;
+    $header-font-decor: "Montserrat", sans-serif;
+    $paragraph-font: "Open Sans", sans-serif;
+
+// -------------
+
+// Font sizes
+
+    $base-font-size: 1rem;
+    $font-size-sm: $base-font-size * 0.75;
+    $font-size-md: $base-font-size * 1.25;
+    $font-size-lg: $base-font-size * 1.5;
+    $font-size-xl: $base-font-size * 2;
+    $font-size-xxl: $base-font-size * 3;
+
+// -------------
+
+// General Paddings
+
+    $gen-padding: 64px 128px; // Padding na komputerach
+    $tab-padding: 64px 32px; // Padding na tabletach
+    $mob-padding: 48px 8px; // Padding na telefonach
+
+// --------------

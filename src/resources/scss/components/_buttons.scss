@@ -1,0 +1,45 @@
+@use '../variables' as *;
+
+/* Guziki */
+
+
+    .primary-button{
+
+        background-image: $primary-gradient;
+        border: none;
+        color: $black;
+        box-shadow: 8px 8px 16px $black25;
+        padding: 16px 24px;
+        font-style: $header-font;
+        font-weight: bold;
+        border-radius: 16px;
+        font-size: 1rem;
+        line-height: 1.1rem;
+        cursor: pointer;
+
+        &:hover{
+            background-image: linear-gradient(to right, $primary-color,#9FD5DD);
+        }
+        &:active{
+            background-image: linear-gradient(to right, #6F959F,#95B4B9);
+        }
+        &:disabled{
+            background-image: none;
+            background-color: $disable;
+        }
+    }
+
+    .secondary-button{
+
+        &:hover{
+
+        }
+        &:active{
+
+        }
+        &:disabled{
+
+        }
+    }
+
+/* ------------------ */

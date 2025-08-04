@@ -1,0 +1,11 @@
+section.hero{
+    height: 100vh;
+    overflow: hidden;
+
+    >div{
+        z-index: 3;
+        >h1{
+            font-size: 4rem !important;
+        }
+    }
+}

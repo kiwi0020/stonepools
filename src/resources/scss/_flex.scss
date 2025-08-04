@@ -1,0 +1,365 @@
+@use 'breakpoints' as bp;
+
+/* Kontenery główne */
+
+    .container-row{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+    }
+    .container-col{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+    }
+
+/* ----------------- */
+
+/* Flex */
+
+    .jus-con-btwn{
+        justify-content: space-between !important;
+    }
+    .jus-con-arnd{
+        justify-content: space-around;
+    }
+    .jus-con-evn{
+        justify-content: space-evenly;
+    }
+    .jus-con-start{
+        justify-content: flex-start;
+    }
+    .jus-con-end{
+        justify-content: flex-end;
+    }
+    .jus-con-center{
+        justify-content: center;
+    }
+
+/* ----------- */
+
+    .al-items-start{
+        align-items: flex-start;
+    }
+    .al-items-end{
+        align-items: flex-end;
+    }
+    .al-items-center{
+        align-items: center;
+    }
+    .al-items-stretch{
+        align-items: stretch;
+    }
+
+/* ----------- */
+
+    .al-self-start{
+        align-self: flex-start;
+    }
+    .al-self-end{
+        align-self: flex-end;
+    }
+    .al-self-center{
+        align-self: center;
+    }
+
+/* ----------- */
+
+    .wrap{
+        flex-wrap: wrap;
+    }
+    .no-wrap{
+        flex-wrap: nowrap;
+    }
+
+/* ---------- */
+
+/* Gaps */
+
+    .gap-0{
+        gap: 0px;
+    }
+    .gap-8{
+        gap: 8px;
+    }
+    .gap-16{
+        gap: 16px;
+    }
+    .gap-24{
+        gap: 24px;
+    }
+    .gap-32{
+        gap: 32px;
+    }
+    .gap-48{
+        gap: 48px;
+    }
+    .gap-64{
+        gap: 64px;
+    }
+    .gap-96{
+        gap: 96px;
+    }
+    .gap-128{
+        gap: 128px;
+    }
+
+/* ---------- */
+
+/* Flex Content */
+
+    /* Extra small */
+
+        .flex-con-xs-0{
+            >div{
+                flex: 1 1 25% !important;
+
+                @include bp.lg{
+                    flex: 1 1 calc(50%) !important;
+                }
+                @include bp.md{
+                    flex: 1 1 calc(100%) !important;
+                }
+            }
+        }
+
+        .flex-con-xs-8{
+            >div{
+                flex: 1 1 calc(25% - 8px) !important;
+
+                @include bp.lg{
+                    flex: 1 1 calc(50% - 8px) !important;
+                }
+                @include bp.md{
+                    flex: 1 1 calc(100% - 8px) !important;
+                }
+            }
+        }
+
+        .flex-con-xs-16{
+            >div{
+                flex: 1 1 calc(25% - 16px) !important;
+
+                @include bp.lg{
+                    flex: 1 1 calc(50% - 16px) !important;
+                }
+                @include bp.md{
+                    flex: 1 1 calc(100% - 16px) !important;
+                }
+            }
+        }
+
+        .flex-con-xs-24{
+            >div{
+                flex: 1 1 calc(25% - 24px) !important;
+
+                @include bp.lg{
+                    flex: 1 1 calc(50% - 24px) !important;
+                }
+                @include bp.md{
+                    flex: 1 1 calc(100% - 24px) !important;
+                }
+            }
+        }
+
+        .flex-con-xs-32{
+            >div{
+                flex: 1 1 calc(25% - 32px) !important;
+
+                @include bp.lg{
+                    flex: 1 1 calc(50% - 32px) !important;
+                }
+                @include bp.md{
+                    flex: 1 1 calc(100% - 32px) !important;
+                }
+            }
+        }
+
+        .flex-con-xs-64{
+            >div{
+                flex: 1 1 calc(25% - 64px) !important;
+
+                @include bp.lg{
+                    flex: 1 1 calc(50% - 64px) !important;
+                }
+                @include bp.md{
+                    flex: 1 1 calc(100% - 64px) !important;
+                }
+            }
+        }
+
+    /* Small */
+    .flex-con-sm-0{
+        >div{
+            flex: 1 1 calc(33% - 0px) !important;
+
+            @include bp.lg{
+                flex: 1 1 calc(50% - 0px) !important;
+            }
+            @include bp.md{
+                flex: 1 1 calc(100% - 0px) !important;
+            }
+        }
+    }
+
+    .flex-con-sm-8{
+        >div{
+            flex: 1 1 calc(33% - 8px) !important;
+
+            @include bp.lg{
+                flex: 1 1 calc(50% - 8px) !important;
+            }
+            @include bp.md{
+                flex: 1 1 calc(100% - 8px) !important;
+            }
+        }
+    }
+
+    .flex-con-sm-16{
+        >div{
+            flex: 1 1 calc(33% - 16px) !important;
+
+            @include bp.lg{
+                flex: 1 1 calc(50% - 16px) !important;
+            }
+            @include bp.md{
+                flex: 1 1 calc(100% - 16px) !important;
+            }
+        }
+    }
+
+    .flex-con-sm-24{
+        >div{
+            flex: 1 1 calc(33% - 24px) !important;
+
+            @include bp.lg{
+                flex: 1 1 calc(50% - 24px) !important;
+            }
+            @include bp.md{
+                flex: 1 1 calc(100% - 24px) !important;
+            }
+        }
+    }
+
+    .flex-con-sm-32{
+        >div{
+            flex: 1 1 calc(33% - 32px) !important;
+
+            @include bp.lg{
+                flex: 1 1 calc(50% - 32px) !important;
+            }
+            @include bp.md{
+                flex: 1 1 calc(100% - 32px) !important;
+            }
+        }
+    }
+
+    .flex-con-sm-64{
+        >div{
+            flex: 1 1 calc(33% - 64px) !important;
+
+            @include bp.lg{
+                flex: 1 1 calc(50% - 64px) !important;
+            }
+            @include bp.md{
+                flex: 1 1 calc(100% - 64px) !important;
+            }
+        }
+    }
+
+/* Medium */
+    .flex-con-md-0{
+        >div{
+            flex: 1 1 calc(50% - 0px) !important;
+
+            @include bp.lg{
+                flex: 1 1 calc(100% - 0px) !important;
+            }
+        }
+    }
+
+    .flex-con-md-8{
+        >div{
+            flex: 1 1 calc(50% - 8px) !important;
+
+            @include bp.lg{
+                flex: 1 1 calc(100% - 8px) !important;
+            }
+        }
+    }
+
+    .flex-con-md-16{
+        >div{
+            flex: 1 1 calc(50% - 16px) !important;
+            @include bp.lg{
+                flex: 1 1 calc(100% - 16px) !important;
+            }
+        }
+    }
+    .flex-con-md-24{
+        >div{
+            flex: 1 1 calc(50% - 24px) !important;
+            @include bp.lg{
+                flex: 1 1 calc(100% - 24px) !important;
+            }
+        }
+    }
+    .flex-con-md-32{
+        >div{
+            flex: 1 1 calc(50% - 32px) !important;
+            @include bp.lg{
+                flex: 1 1 calc(100% - 32px) !important;
+            }
+        }
+    }
+    .flex-con-md-64{
+        >div{
+            flex: 1 1 calc(50% - 64px) !important;
+            @include bp.lg{
+                flex: 1 1 calc(100% - 64px) !important;
+            }
+        }
+    }
+
+/* ------------ */
+
+/* Large */
+
+    .flex-con-lg-0{
+        >div{
+            flex: 1 1 calc(100% - 0px) !important;
+        }
+    }
+    .flex-con-lg-8{
+        >div{
+            flex: 1 1 calc(100% - 8px) !important;
+        }
+    }
+    .flex-con-lg-16{
+        >div{
+            flex: 1 1 calc(100% - 16px) !important;
+        }
+    }
+    .flex-con-lg-24{
+        >div{
+            flex: 1 1 calc(100% - 24px) !important;
+        }
+    }
+    .flex-con-lg-32{
+        >div{
+            flex: 1 1 calc(100% - 32px) !important;
+        }
+    }
+    .flex-con-lg-64{
+        >div{
+            flex: 1 1 calc(100% - 64px) !important;
+        }
+    }
+
+/* ------------ */
+
+/* ------------------------------------------- */
