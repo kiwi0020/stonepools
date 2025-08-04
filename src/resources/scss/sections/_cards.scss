@@ -22,6 +22,11 @@
 // Karta produktu
 
 .product-card{
+    border-bottom: 1px solid $black10;
+    padding: 32px 16px;
+    transition: all .2s ease-in;
+    border-radius: 32px;
+
     >div{
         .product-card-image{
             width: 250px;
@@ -32,5 +37,13 @@
         &:nth-child(2){
             width: calc(100% - 250px);
         }
+    }
+
+    &:last-child{
+        border-bottom: none;
+    }
+
+    &:hover{
+        box-shadow: 0 0 16px 8px $black5;
     }
 }

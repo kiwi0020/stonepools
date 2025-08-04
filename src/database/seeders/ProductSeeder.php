@@ -71,8 +71,8 @@ class ProductSeeder extends Seeder
             'subcategory_id' => $szlachetna->id,
         ]);
         Product::create([
-            'name' => 'Druk Świdnicki',
-            'slug' => 'druk-swidnicki',
+            'name' => 'Bruk Świdnicki',
+            'slug' => 'bruk-swidnicki',
             'description' => 'Nietuzinkowy, zaokrąglony kształt kostki sprawia, że kostka idealnie nadaje się do tworzenia wyjątkowych nawierzchni.',
             'subcategory_id' => $szlachetna->id,
         ]);
@@ -90,6 +90,13 @@ class ProductSeeder extends Seeder
             'slug' => 'basen-portugal',
             'description' => '',
             'subcategory_id' => $baseny->id,
+        ]);
+
+        Product::create([
+            'name' => 'Zadaszenie "Eco Classic',
+            'slug' => 'zadaszenie-eco-classic',
+            'description' => '',
+            'subcategory_id' => $zadaszeniaBasenow->id,
         ]);
 
     }

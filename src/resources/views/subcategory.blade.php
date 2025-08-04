@@ -47,7 +47,7 @@
     <main id="home-page">
 
         <section class="container-col gen-padding width-100 paralax" style="background-image: url('{{asset('images/baseny-bg.png')}}'); height: 50vh;">
-            <h1 class="h-semi font-white"> {{$category->name}} </h1>
+            <h1 class="h-semi font-white"> {{$subcategory->name}} </h1>
         </section>
 
         <section class="container-col gen-padding width-100 al-items-start ">
@@ -58,16 +58,15 @@
 
                     @foreach($category->subcategories as $subcat)
                         
-                            <a class="" href="{{ route('subcategory.show', ['categorySlug' => $category->slug, 'subcategorySlug' => $subcat->slug]) }}">
-                                <h3 class="h-reg" style="padding-left: 24px;">{{ $subcat->name }} </h3>
-                            </a>
-
+                        <a href="{{ route('subcategory.show', ['categorySlug' => $category->slug, 'subcategorySlug' => $subcat->slug]) }}">
+                            <h3 class="h-reg" style="padding-left: 24px;">{{ $subcat->name }}</h3>
+                        </a>
                     @endforeach
                 </div>
-                <div class="container-col al-items-start width-100 gap-8" >
-                    @foreach($category->subcategories as $subcategory)
 
-                        @foreach($subcategory->products as $product)
+                <div class="container-col al-items-start width-100 gap-8" >
+                    {{-- Produkty tylko z wybranej podkategorii --}}
+                    @foreach($subcategory->products as $product)
 
                         <a href="{{ route('product.show', [
                                 'categorySlug' => $category->slug,
@@ -76,7 +75,7 @@
                             ]) }}" class="width-100">
                             <div class="container-row product-card width-100">
                                 <div class="container-col product-card-image">
-                                    
+                                    {{-- Tu możesz dodać obraz produktu --}}
                                 </div>
                                 <div class="container-col al-items-start gap-32">
                                     <div class="container-col al-items-start gap-8">
@@ -88,12 +87,11 @@
                             </div>
                         </a>
 
-                        @endforeach
-
                     @endforeach
                 </div>
             </div>
         </section>
+
 
     </main>
 

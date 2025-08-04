@@ -1,16 +1,16 @@
 <header class="container-row width-100 jus-con-btwn pos-fix bg-transparent">
     <div class="container-col height-100">
-        <a href="/" class="height-100">
+        <a href=" {{ route('home') }}" class="height-100">
             <img class="height-100 padding-8" src=" {{ asset('images/logo.webp') }}" alt="Logotyp Stonepools">
         </a>
     </div>
     <div>
         <nav>
             <ul class="container-row gap-0">
-                <li><a href="kostka-brukowa">Kostka brukowa</a></li>
-                <li><a href="baseny">Baseny</a></li>
-                <li><a href="kontakt">Kontakt</a></li>
-                <li><a href="zamowienie">Zamówienie</a></li>
+                <li><a href=" {{ route('category.kostka') }}">Kostka brukowa</a></li>
+                <li><a href="{{ route('category.baseny') }}">Baseny</a></li>
+                <li><a href="{{ route('kontakt') }}">Kontakt</a></li>
+                <li><a href="{{ route('zamowienie') }}">Zamówienie</a></li>
             </ul>
         </nav>
         <label class="hamburger">

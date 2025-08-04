@@ -12,4 +12,10 @@ class Product extends Model
     public function variants(){
         return $this->hasMany(ProductVariant::class);
     }
+    // public function colorVariants(){
+    //     return $this->hasMany(ProductVariant::class)->where('type', 'color');
+    // }
+    // public function sizeVariants(){
+    //     return $this->hasMany(ProductVariant::class)->where('type', 'size');
+    // }
 }
