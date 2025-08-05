@@ -46,6 +46,18 @@
 
     <main id="home-page">
 
+        @if(session('success'))
+            <div class="alert gen-padding" >
+                <p>{{ session('success') }}</p>
+                <div class="container-row gap-2 mt-2">
+                    <a href="{{ url()->current() }}" class="secondary-button">Kontynuuj</a>
+                    <a href="{{ route('zamowienie') }}" class="primary-button">Przejdź do zamówienia</a>
+                </div>
+            </div>
+        @endif
+
+
+
         <section class="container-row" style="padding: 128px 0 64px 0;">
             <a href="{{ url('/') }}">Strona główna</a>
             <span>/</span>
