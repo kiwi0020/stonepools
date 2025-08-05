@@ -6,6 +6,8 @@ use App\Models\Order;
 use App\Models\ProductVariant;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\ZamowieniePotwierdzenieMail;
 
 class OrderController extends Controller
 {
@@ -63,6 +65,7 @@ class OrderController extends Controller
 
         // Zapisujemy każdy produkt jako element zamówienia
         foreach ($items as $item){
+            
             $order->items()->create([
                 'product_id' => $item['product_id'],
                 'product_name' => $item['product_name'] ?? 'Brak nazwy',
@@ -74,6 +77,10 @@ class OrderController extends Controller
 
         // Czyścimy koszyk z sesji
         session()->forget('order');
+
+        Mail::to($order->email)->send(new ZamowieniePotwierdzenieMail($order, $items));
+
+        Mail::to('michalwedzina@gmail.com')->send(new ZamowieniePotwierdzenieMail($order, $items));
 
         return redirect()->route('zamowienie.potwierdzenie')->with('success', 'Zamówienie zostało złożone.');
     }

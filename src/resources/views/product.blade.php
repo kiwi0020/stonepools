@@ -82,6 +82,8 @@
                 <form class="container-col al-items-start" action="{{ route('dodaj.do.zamowienia') }}" method="POST">
                     @csrf
                     <input type="hidden" name="product_id" value="{{ $product->id }}">
+                    <input type="hidden" name="product_name" value="{{ $product->name }}">
+
 
                     @if ($product->variants->where('type', 'size')->isNotEmpty())
                         <h3 class="h-reg">Rozmiar</h3>
