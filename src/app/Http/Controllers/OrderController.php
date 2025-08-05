@@ -14,6 +14,7 @@ class OrderController extends Controller
     public function dodajDoZamowienia(Request $request){
         $productId = $request->product_id;
         $productName = $request->product_name;
+        $description = $request->description;
         $sizeVariant = ProductVariant::find($request->size_variant_id);
         $colorVariant = ProductVariant::find($request->color_variant_id);
 
@@ -24,7 +25,7 @@ class OrderController extends Controller
             'product_name' => $productName ?? 'Brak nazwy',
             'size' => $sizeVariant ? $sizeVariant->name : 'Brak rozmiaru',
             'color' => $colorVariant ? $colorVariant->name : 'Brak koloru',
-            'description' => $request->description ?? '',
+            'description' => $description ?? '',
         ];
 
         Session::put('order', $order);
@@ -57,15 +58,11 @@ class OrderController extends Controller
             'email' => 'required|email',
         ]);
 
-        // Tworzymy zamówienie (dane klienta)
         $order = Order::create($orderData);
 
-        // Pobieramy produkty z sesji
         $items = session('order', []);
 
-        // Zapisujemy każdy produkt jako element zamówienia
         foreach ($items as $item){
-            
             $order->items()->create([
                 'product_id' => $item['product_id'],
                 'product_name' => $item['product_name'] ?? 'Brak nazwy',
@@ -75,7 +72,6 @@ class OrderController extends Controller
             ]);
         }
 
-        // Czyścimy koszyk z sesji
         session()->forget('order');
 
         Mail::to($order->email)->send(new ZamowieniePotwierdzenieMail($order, $items));

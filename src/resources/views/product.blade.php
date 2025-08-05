@@ -79,10 +79,13 @@
                 <p>{{ $product->description }}</p>
                 
 
+                {{-- Plik resources/views/product.blade.php --}}
+
                 <form class="container-col al-items-start" action="{{ route('dodaj.do.zamowienia') }}" method="POST">
                     @csrf
                     <input type="hidden" name="product_id" value="{{ $product->id }}">
                     <input type="hidden" name="product_name" value="{{ $product->name }}">
+                    <input type="hidden" name="description" value="{{ $product->description }}">
 
 
                     @if ($product->variants->where('type', 'size')->isNotEmpty())
