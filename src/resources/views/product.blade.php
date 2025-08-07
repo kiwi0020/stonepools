@@ -89,6 +89,7 @@
                     <input type="hidden" name="product_id" value="{{ $product->id }}">
                     <input type="hidden" name="product_name" value="{{ $product->name }}">
                     <input type="hidden" name="description" value="{{ $product->description }}">
+                    <input type="hidden" name="image_path" value="{{ $product->image_path }}">
 
 
                     @if ($product->variants->where('type', 'size')->isNotEmpty())

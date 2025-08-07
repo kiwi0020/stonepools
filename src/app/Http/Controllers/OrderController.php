@@ -15,6 +15,7 @@ class OrderController extends Controller
         $productId = $request->product_id;
         $productName = $request->product_name;
         $description = $request->description;
+        $image_path = $request->image_path;
         $sizeVariant = ProductVariant::find($request->size_variant_id);
         $colorVariant = ProductVariant::find($request->color_variant_id);
 
@@ -26,6 +27,7 @@ class OrderController extends Controller
             'size' => $sizeVariant ? $sizeVariant->name : 'Brak rozmiaru',
             'color' => $colorVariant ? $colorVariant->name : 'Brak koloru',
             'description' => $description ?? '',
+            'image_path' => $image_path ?? null,
         ];
 
         Session::put('order', $order);
