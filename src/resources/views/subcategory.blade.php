@@ -73,9 +73,9 @@
                                 'subcategorySlug' => $subcategory->slug,
                                 'productSlug' => $product->slug
                             ]) }}" class="width-100">
-                            <div class="container-row product-card width-100">
+                            <div class="container-row product-card width-100 gap-32">
                                 <div class="container-col product-card-image">
-                                    {{-- Tu możesz dodać obraz produktu --}}
+                                    <img src="{{ asset( $product->image_path ) }}" alt="">
                                 </div>
                                 <div class="container-col al-items-start gap-32">
                                     <div class="container-col al-items-start gap-8">

@@ -1,0 +1,56 @@
+@use '../variables' as *;
+
+// Strona produktu
+
+.product-route{
+    a, span{
+        font-family: $header-font;
+    }
+}
+
+.product-page-product-card{
+
+    border-bottom: 1px solid $black5;
+    .product-size{
+        input{
+            opacity: 0;
+            position: absolute;
+            right: 1000px;
+            
+        }
+
+        >div{
+            border-radius: 8px;
+            padding: 8px 16px;
+            border: 2px solid $black5;
+            >label{
+                cursor: pointer;
+            }
+        }
+        >div:has(input:checked){
+            border: 2px solid $black;
+        }
+    }
+
+    .product-color{
+
+        input{
+            opacity: 0;
+            position: absolute;
+            right: 1000px;
+            
+        }
+
+        >div{
+            border-radius: 8px;
+            padding: 4px 4px;
+            border: 2px solid $black5;
+            >label{
+                cursor: pointer;
+            }
+        }
+        >div:has(input:checked){
+            border: 2px solid $black;
+        }
+    }
+}

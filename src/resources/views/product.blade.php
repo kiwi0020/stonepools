@@ -44,21 +44,21 @@
 
     <!-- Main -->
 
-    <main id="home-page">
+    <main id="home-page" style="padding-top: 100px;">
 
         @if(session('success'))
-            <div class="alert gen-padding" >
-                <p>{{ session('success') }}</p>
-                <div class="container-row gap-2 mt-2">
-                    <a href="{{ url()->current() }}" class="secondary-button">Kontynuuj</a>
-                    <a href="{{ route('zamowienie') }}" class="primary-button">Przejdź do zamówienia</a>
+            <div class="alert gen-padding container-col gap-32 bg-black5">
+                <p><strong>{{ session('success') }}</strong></p>
+                <div class="container-row gap-24">
+                    <a href="{{ url()->current() }}"><button class="secondary-button">Kontynuuj zakupy</button></a>
+                    <a href="{{ route('zamowienie') }}"><button class="primary-button">Przejdź do zamówienia</button></a>
                 </div>
             </div>
         @endif
 
 
 
-        <section class="container-row" style="padding: 128px 0 64px 0;">
+        <section class="container-row jus-con-start gen-padding product-route">
             <a href="{{ url('/') }}">Strona główna</a>
             <span>/</span>
             <a href="{{ route('category.show', $category->slug) }}">{{ $category->name }}</a>
@@ -67,12 +67,15 @@
             <span>/</span>
             <span>{{ $product->name }}</span>
 
-            <a href="{{ url()->previous() }}">Powrót</a>
+
         </section>
 
-        <section class="container-row gen-padding width-100 flex-con-md-32 gap-32 wrap al-items-start">
-            <div class="container-col al-items-start">
-                <img class="width-100" src="" alt="Zdjęcie produktu">
+        <section class="container-row gen-padding width-100 flex-con-md-32 gap-32 wrap al-items-start product-page-product-card">
+            <div class="container-row wrap al-items-start ">
+                <img class="width-40" src="{{ asset($product->image_path) }}" alt="Zdjęcie produktu">
+                <img class="width-40" src="{{ asset($product->image_path) }}" alt="Zdjęcie produktu">
+                <img class="width-40" src="{{ asset($product->image_path) }}" alt="Zdjęcie produktu">
+                
             </div>
             <div class="container-col al-items-start gap-32 padding-32">
                 <h2 class="h-semi">{{ $product->name }}</h2>
@@ -81,7 +84,7 @@
 
                 {{-- Plik resources/views/product.blade.php --}}
 
-                <form class="container-col al-items-start" action="{{ route('dodaj.do.zamowienia') }}" method="POST">
+                <form class="container-col al-items-start gap-32" action="{{ route('dodaj.do.zamowienia') }}" method="POST">
                     @csrf
                     <input type="hidden" name="product_id" value="{{ $product->id }}">
                     <input type="hidden" name="product_name" value="{{ $product->name }}">
@@ -90,7 +93,7 @@
 
                     @if ($product->variants->where('type', 'size')->isNotEmpty())
                         <h3 class="h-reg">Rozmiar</h3>
-                        <div class="container-row">
+                        <div class="container-row product-size">
                             @foreach ($product->variants->where('type', 'size') as $variant)
                                 <div>
                                     <input type="radio" id="size_{{ $variant->id }}" name="size_variant_id" value="{{ $variant->id }}" required>
@@ -104,11 +107,11 @@
 
                     @if ($product->variants->where('type', 'color')->isNotEmpty())
                         <h3 class="h-reg">Kolor</h3>
-                        <div class="container-row wrap jus-con-start">
+                        <div class="container-row wrap jus-con-start product-color">
                             @foreach ($product->variants->where('type', 'color') as $variant)
-                                <div>
+                                <div >
                                     <input type="radio" id="color_{{ $variant->id }}" name="color_variant_id" value="{{ $variant->id }}" required>
-                                    <label for="color_{{ $variant->id }}"><p>{{ $variant->name }}</p></label>
+                                    <label for="color_{{ $variant->id }}"><img width="50" height="50" src="{{asset( $variant->image_path )}}" alt="" title="{{ $variant->name }}"></label>
                                 </div>
                             @endforeach
                         </div>

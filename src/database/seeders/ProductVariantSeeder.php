@@ -52,102 +52,119 @@ class ProductVariantSeeder extends Seeder
             'name' => 'Biały/śrutowanie',
             'type' => 'color',
             'value' => 'Biały/śrutowanie',
+            'image_path' => 'images/produkty/biel-srutowanie.webp',
         ]);
         ProductVariant::create([
             'product_id' => $tresso->id,
             'name' => 'Szary/śrutowanie',
             'type' => 'color',
             'value' => 'Szary/śrutowanie',
+            'image_path' => 'images/produkty/szary-srutowanie.webp',
         ]);
         ProductVariant::create([
             'product_id' => $tresso->id,
             'name' => 'Antracyt/śrutowanie',
             'type' => 'color',
             'value' => 'Antracyt/śrutowanie',
+            'image_path' => 'images/produkty/antracyt-srutowanie.webp',
         ]);
         ProductVariant::create([
             'product_id' => $tresso->id,
             'name' => 'Zimny popiel/śrutowanie',
             'type' => 'color',
             'value' => 'Zimny popiel/śrutowanie',
+            'image_path' => 'images/produkty/zimny-popiel-srutowanie.webp',
         ]);
         ProductVariant::create([
             'product_id' => $tresso->id,
             'name' => 'Biały/monocolor',
             'type' => 'color',
             'value' => 'Biały/monocolor',
+            'image_path' => 'images/produkty/biel-mono.webp',
         ]);
         ProductVariant::create([
             'product_id' => $tresso->id,
             'name' => 'Szary/monocolor',
             'type' => 'color',
             'value' => 'Szary/monocolor',
+            'image_path' => 'images/produkty/szary-mono.webp',
         ]);
         ProductVariant::create([
             'product_id' => $tresso->id,
             'name' => 'Antracyt/monocolor',
             'type' => 'color',
             'value' => 'Antracyt/monocolor',
+            'image_path' => 'images/produkty/monocolor-antracyt.webp',
         ]);
         ProductVariant::create([
             'product_id' => $tresso->id,
             'name' => 'Ciepły popiel/color-mix',
             'type' => 'color',
             'value' => 'Ciepły popiel/color-mix',
+            'image_path' => 'images/produkty/color-mix-cieply-popiel.webp',
         ]);
         ProductVariant::create([
             'product_id' => $tresso->id,
             'name' => 'Szara umbra/color-mix',
             'type' => 'color',
             'value' => 'Szara umbra/color-mix',
+            'image_path' => 'images/produkty/color-mix-szara-umbra.webp',
         ]);
         ProductVariant::create([
             'product_id' => $tresso->id,
             'name' => 'Zimny popiel/color-mix',
             'type' => 'color',
             'value' => 'Zimny popiel/color-mix',
+            'image_path' => 'images/produkty/color-mix-zimny-popiel.webp',
         ]);
         ProductVariant::create([
             'product_id' => $tresso->id,
             'name' => 'Coffee mocha / color-mix / antic',
             'type' => 'color',
             'value' => 'Coffee mocha / color-mix / antic',
+            'image_path' => 'images/produkty/color-mix-coffee-mocha.webp',
         ]);
         ProductVariant::create([
             'product_id' => $tresso->id,
             'name' => 'Tycjan/color mix',
             'type' => 'color',
             'value' => 'Tycjan/color mix',
+            'image_path' => 'images/produkty/color-mix-tycjan.webp',
         ]);
         ProductVariant::create([
             'product_id' => $tresso->id,
             'name' => 'Labrador beż / color-mix',
             'type' => 'color',
             'value' => 'Labrador beż / color-mix',
+            'image_path' => 'images/produkty/color-mix-labrador-bez.webp',
         ]);
         ProductVariant::create([
             'product_id' => $tresso->id,
             'name' => 'Słony karmel / color-mix',
             'type' => 'color',
             'value' => 'Słony karmel / color-mix',
+            'image_path' => 'images/produkty/color-mix-slony-karmel.webp',
         ]);
         ProductVariant::create([
             'product_id' => $tresso->id,
             'name' => 'Zachód słońca / color-mix',
             'type' => 'color',
             'value' => 'Zachód słońca / color-mix',
+            'image_path' => 'images/produkty/color-mix-zachod-slonca.webp',
         ]);
         ProductVariant::create([
             'product_id' => $tresso->id,
             'name' => 'Złota aleja / color-mix',
             'type' => 'color',
             'value' => 'Złota aleja / color-mix',
+            'image_path' => 'images/produkty/color-mix-zlota-aleja.webp',
         ]);
         ProductVariant::create([
             'product_id' => $tresso->id,
             'name' => 'Ciepły popiel / śrutowanie',
             'type' => 'color',
             'value' => 'Ciepły popiel / śrutowanie',
+            'image_path' => 'images/produkty/cieply-popiel-srutowanie.webp',
         ]);
 
         // ------------------------------
@@ -200,90 +217,105 @@ class ProductVariantSeeder extends Seeder
             'name' => 'Biały/śrutowanie',
             'type' => 'color',
             'value' => 'Biały/śrutowanie',
+            'image_path' => 'images/produkty/biel-srutowanie.webp',
         ]);
         ProductVariant::create([
             'product_id' => $nano->id,
             'name' => 'Szary/śrutowanie',
             'type' => 'color',
             'value' => 'Szary/śrutowanie',
+            'image_path' => 'images/produkty/szary-srutowanie.webp',
         ]);
         ProductVariant::create([
             'product_id' => $nano->id,
             'name' => 'Antracyt/śrutowanie',
             'type' => 'color',
             'value' => 'Antracyt/śrutowanie',
+            'image_path' => 'images/produkty/antracyt-srutowanie.webp',
         ]);
         ProductVariant::create([
             'product_id' => $nano->id,
             'name' => 'Biały/monocolor',
             'type' => 'color',
             'value' => 'Biały/monocolor',
+            'image_path' => 'images/produkty/biel-mono.webp',
         ]);
         ProductVariant::create([
             'product_id' => $nano->id,
             'name' => 'Szary/monocolor',
             'type' => 'color',
             'value' => 'Szary/monocolor',
+            'image_path' => 'images/produkty/szary-mono.webp',
         ]);
         ProductVariant::create([
             'product_id' => $nano->id,
             'name' => 'Antracyt/monocolor',
             'type' => 'color',
             'value' => 'Antracyt/monocolor',
+            'image_path' => 'images/produkty/monocolor-antracyt.webp',
         ]);
         ProductVariant::create([
             'product_id' => $nano->id,
             'name' => 'Ciepły popiel/color-mix',
             'type' => 'color',
             'value' => 'Ciepły popiel/color-mix',
+            'image_path' => 'images/produkty/color-mix-cieply-popiel.webp',
         ]);
         ProductVariant::create([
             'product_id' => $nano->id,
             'name' => 'Szara umbra/color-mix',
             'type' => 'color',
             'value' => 'Szara umbra/color-mix',
+            'image_path' => 'images/produkty/color-mix-szara-umbra.webp',
         ]);
         ProductVariant::create([
             'product_id' => $nano->id,
             'name' => 'Zimny popiel/color-mix',
             'type' => 'color',
             'value' => 'Zimny popiel/color-mix',
+            'image_path' => 'images/produkty/color-mix-zimny-popiel.webp',
         ]);
         ProductVariant::create([
             'product_id' => $nano->id,
             'name' => 'Coffee mocha / color-mix / antic',
             'type' => 'color',
             'value' => 'Coffee mocha / color-mix / antic',
+            'image_path' => 'images/produkty/color-mix-coffee-mocha.webp',
         ]);
         ProductVariant::create([
             'product_id' => $nano->id,
             'name' => 'Tycjan/color mix',
             'type' => 'color',
             'value' => 'Tycjan/color mix',
+            'image_path' => 'images/produkty/color-mix-tycjan.webp',
         ]);
         ProductVariant::create([
             'product_id' => $nano->id,
             'name' => 'Labrador beż / color-mix',
             'type' => 'color',
             'value' => 'Labrador beż / color-mix',
+            'image_path' => 'images/produkty/color-mix-labrador-bez.webp',
         ]);
         ProductVariant::create([
             'product_id' => $nano->id,
             'name' => 'Słony karmel / color-mix',
             'type' => 'color',
             'value' => 'Słony karmel / color-mix',
+            'image_path' => 'images/produkty/color-mix-slony-karmel.webp',
         ]);
         ProductVariant::create([
             'product_id' => $nano->id,
             'name' => 'Zachód słońca / color-mix',
             'type' => 'color',
             'value' => 'Zachód słońca / color-mix',
+            'image_path' => 'images/produkty/color-mix-zachod-slonca.webp',
         ]);
         ProductVariant::create([
             'product_id' => $nano->id,
             'name' => 'Złota aleja / color-mix',
             'type' => 'color',
             'value' => 'Złota aleja / color-mix',
+            'image_path' => 'images/produkty/color-mix-zlota-aleja.webp',
         ]);
 
         // --------------------------------
@@ -336,72 +368,84 @@ class ProductVariantSeeder extends Seeder
             'name' => 'Biały/śrutowanie',
             'type' => 'color',
             'value' => 'Biały/śrutowanie',
+            'image_path' => 'images/produkty/biel-srutowanie.webp',
         ]);
         ProductVariant::create([
             'product_id' => $kostkaSudecka->id,
             'name' => 'Szary/śrutowanie',
             'type' => 'color',
             'value' => 'Szary/śrutowanie',
+            'image_path' => 'images/produkty/szary-srutowanie.webp',
         ]);
         ProductVariant::create([
             'product_id' => $kostkaSudecka->id,
             'name' => 'Antracyt/śrutowanie',
             'type' => 'color',
             'value' => 'Antracyt/śrutowanie',
+            'image_path' => 'images/produkty/antracyt-srutowanie.webp',
         ]);
         ProductVariant::create([
             'product_id' => $kostkaSudecka->id,
             'name' => 'Ciepły popiel / color-mix',
             'type' => 'color',
             'value' => 'Ciepły popiel / color-mix',
+            'image_path' => 'images/produkty/color-mix-cieply-popiel.webp',
         ]);
         ProductVariant::create([
             'product_id' => $kostkaSudecka->id,
             'name' => 'Szara umbra/color-mix',
             'type' => 'color',
             'value' => 'Szara umbra/color-mix',
+            'image_path' => 'images/produkty/color-mix-szara-umbra.webp',
         ]);
         ProductVariant::create([
             'product_id' => $kostkaSudecka->id,
             'name' => 'Zimny popiel/color-mix',
             'type' => 'color',
             'value' => 'Zimny popiel/color-mix',
+            'image_path' => 'images/produkty/color-mix-zimny-popiel.webp',
         ]);
         ProductVariant::create([
             'product_id' => $kostkaSudecka->id,
             'name' => 'Coffee mocha / color-mix / antic',
             'type' => 'color',
             'value' => 'Coffee mocha / color-mix / antic',
+            'image_path' => 'images/produkty/color-mix-coffee-mocha.webp',
         ]);
         ProductVariant::create([
             'product_id' => $kostkaSudecka->id,
             'name' => 'Tycjan/color mix',
             'type' => 'color',
             'value' => 'Tycjan/color mix',
+            'image_path' => 'images/produkty/color-mix-tycjan.webp',
         ]);
         ProductVariant::create([
             'product_id' => $kostkaSudecka->id,
             'name' => 'Labrador beż / color-mix',
             'type' => 'color',
             'value' => 'Labrador beż / color-mix',
+            'image_path' => 'images/produkty/color-mix-labrador-bez.webp',
         ]);
         ProductVariant::create([
             'product_id' => $kostkaSudecka->id,
             'name' => 'Słony karmel / color-mix',
             'type' => 'color',
             'value' => 'Słony karmel / color-mix',
+            'image_path' => 'images/produkty/color-mix-slony-karmel.webp',
         ]);
         ProductVariant::create([
             'product_id' => $kostkaSudecka->id,
             'name' => 'Zachód słońca / color-mix',
             'type' => 'color',
             'value' => 'Zachód słońca / color-mix',
+            'image_path' => 'images/produkty/color-mix-zachod-slonca.webp',
         ]);
         ProductVariant::create([
             'product_id' => $kostkaSudecka->id,
             'name' => 'Złota aleja / color-mix',
             'type' => 'color',
             'value' => 'Złota aleja / color-mix',
+            'image_path' => 'images/produkty/color-mix-zlota-aleja.webp',
         ]);
         ProductVariant::create([
             'product_id' => $kostkaSudecka->id,
@@ -508,72 +552,84 @@ class ProductVariantSeeder extends Seeder
             'name' => 'Biały / monocolor',
             'type' => 'color',
             'value' => 'Biały / monocolor',
+            'image_path' => 'images/produkty/biel-mono.webp',
         ]);
         ProductVariant::create([
             'product_id' => $palazzo->id,
             'name' => 'Szary / monocolor',
             'type' => 'color',
             'value' => 'Szary / monocolor',
+            'image_path' => 'images/produkty/szary-mono.webp',
         ]);
         ProductVariant::create([
             'product_id' => $palazzo->id,
             'name' => 'Antracyt / monocolor',
             'type' => 'color',
             'value' => 'Antracyt / monocolor',
+            'image_path' => 'images/produkty/monocolor-antracyt.webp',
         ]);
         ProductVariant::create([
             'product_id' => $palazzo->id,
             'name' => 'Ciepły popiel / color-mix',
             'type' => 'color',
             'value' => 'Ciepły popiel / color-mix',
+            'image_path' => 'images/produkty/color-mix-cieply-popiel.webp',
         ]);
         ProductVariant::create([
             'product_id' => $palazzo->id,
             'name' => 'Szara umbra/color-mix',
             'type' => 'color',
             'value' => 'Szara umbra/color-mix',
+            'image_path' => 'images/produkty/color-mix-szara-umbra.webp',
         ]);
         ProductVariant::create([
             'product_id' => $palazzo->id,
             'name' => 'Zimny popiel/color-mix',
             'type' => 'color',
             'value' => 'Zimny popiel/color-mix',
+            'image_path' => 'images/produkty/color-mix-zimny-popiel.webp',
         ]);
         ProductVariant::create([
             'product_id' => $palazzo->id,
             'name' => 'Coffee mocha / color-mix / antic',
             'type' => 'color',
             'value' => 'Coffee mocha / color-mix / antic',
+            'image_path' => 'images/produkty/color-mix-coffee-mocha.webp',
         ]);
         ProductVariant::create([
             'product_id' => $palazzo->id,
             'name' => 'Tycjan/color mix',
             'type' => 'color',
             'value' => 'Tycjan/color mix',
+            'image_path' => 'images/produkty/color-mix-tycjan.webp',
         ]);
         ProductVariant::create([
             'product_id' => $palazzo->id,
             'name' => 'Labrador beż / color-mix',
             'type' => 'color',
             'value' => 'Labrador beż / color-mix',
+            'image_path' => 'images/produkty/color-mix-labrador-bez.webp',
         ]);
         ProductVariant::create([
             'product_id' => $palazzo->id,
             'name' => 'Słony karmel / color-mix',
             'type' => 'color',
             'value' => 'Słony karmel / color-mix',
+            'image_path' => 'images/produkty/color-mix-slony-karmel.webp',
         ]);
         ProductVariant::create([
             'product_id' => $palazzo->id,
             'name' => 'Zachód słońca / color-mix',
             'type' => 'color',
             'value' => 'Zachód słońca / color-mix',
+            'image_path' => 'images/produkty/color-mix-zachod-slonca.webp',
         ]);
         ProductVariant::create([
             'product_id' => $palazzo->id,
             'name' => 'Złota aleja / color-mix',
             'type' => 'color',
             'value' => 'Złota aleja / color-mix',
+            'image_path' => 'images/produkty/color-mix-zlota-aleja.webp',
         ]);
     
         // ----------------------------------
@@ -614,90 +670,105 @@ class ProductVariantSeeder extends Seeder
             'name' => 'Biały/śrutowanie',
             'type' => 'color',
             'value' => 'Biały/śrutowanie',
+            'image_path' => 'images/produkty/biel-srutowanie.webp',
         ]);
         ProductVariant::create([
             'product_id' => $piccolino->id,
             'name' => 'Szary/śrutowanie',
             'type' => 'color',
             'value' => 'Szary/śrutowanie',
+            'image_path' => 'images/produkty/szary-srutowanie.webp',
         ]);
         ProductVariant::create([
             'product_id' => $piccolino->id,
             'name' => 'Antracyt/śrutowanie',
             'type' => 'color',
             'value' => 'Antracyt/śrutowanie',
+            'image_path' => 'images/produkty/antracyt-srutowanie.webp',
         ]);
         ProductVariant::create([
             'product_id' => $piccolino->id,
             'name' => 'Biały/monocolor',
             'type' => 'color',
             'value' => 'Biały/monocolor',
+            'image_path' => 'images/produkty/biel-mono.webp',
         ]);
         ProductVariant::create([
             'product_id' => $piccolino->id,
             'name' => 'Szary/monocolor',
             'type' => 'color',
             'value' => 'Szary/monocolor',
+            'image_path' => 'images/produkty/szary-mono.webp',
         ]);
         ProductVariant::create([
             'product_id' => $piccolino->id,
             'name' => 'Antracyt/monocolor',
             'type' => 'color',
             'value' => 'Antracyt/monocolor',
+            'image_path' => 'images/produkty/monocolor-antracyt.webp',
         ]);
         ProductVariant::create([
             'product_id' => $piccolino->id,
             'name' => 'Ciepły popiel/color-mix',
             'type' => 'color',
             'value' => 'Ciepły popiel/color-mix',
+            'image_path' => 'images/produkty/color-mix-cieply-popiel.webp',
         ]);
         ProductVariant::create([
             'product_id' => $piccolino->id,
             'name' => 'Szara umbra/color-mix',
             'type' => 'color',
             'value' => 'Szara umbra/color-mix',
+            'image_path' => 'images/produkty/color-mix-szara-umbra.webp',
         ]);
         ProductVariant::create([
             'product_id' => $piccolino->id,
             'name' => 'Zimny popiel/color-mix',
             'type' => 'color',
             'value' => 'Zimny popiel/color-mix',
+            'image_path' => 'images/produkty/color-mix-zimny-popiel.webp',
         ]);
         ProductVariant::create([
             'product_id' => $piccolino->id,
             'name' => 'Coffee mocha / color-mix / antic',
             'type' => 'color',
             'value' => 'Coffee mocha / color-mix / antic',
+            'image_path' => 'images/produkty/color-mix-coffee-mocha.webp',
         ]);
         ProductVariant::create([
             'product_id' => $piccolino->id,
             'name' => 'Tycjan/color mix',
             'type' => 'color',
             'value' => 'Tycjan/color mix',
+            'image_path' => 'images/produkty/color-mix-tycjan.webp',
         ]);
         ProductVariant::create([
             'product_id' => $piccolino->id,
             'name' => 'Labrador beż / color-mix',
             'type' => 'color',
             'value' => 'Labrador beż / color-mix',
+            'image_path' => 'images/produkty/color-mix-labrador-bez.webp',
         ]);
         ProductVariant::create([
             'product_id' => $piccolino->id,
             'name' => 'Słony karmel / color-mix',
             'type' => 'color',
             'value' => 'Słony karmel / color-mix',
+            'image_path' => 'images/produkty/color-mix-slony-karmel.webp',
         ]);
         ProductVariant::create([
             'product_id' => $piccolino->id,
             'name' => 'Zachód słońca / color-mix',
             'type' => 'color',
             'value' => 'Zachód słońca / color-mix',
+            'image_path' => 'images/produkty/color-mix-zachod-slonca.webp',
         ]);
         ProductVariant::create([
             'product_id' => $piccolino->id,
             'name' => 'Złota aleja / color-mix',
             'type' => 'color',
             'value' => 'Złota aleja / color-mix',
+            'image_path' => 'images/produkty/color-mix-zlota-aleja.webp',
         ]);
 
         // ---------------------------------------
@@ -726,90 +797,105 @@ class ProductVariantSeeder extends Seeder
             'name' => 'Biały/śrutowanie',
             'type' => 'color',
             'value' => 'Biały/śrutowanie',
+            'image_path' => 'images/produkty/biel-srutowanie.webp',
         ]);
         ProductVariant::create([
             'product_id' => $visioKombiformat->id,
             'name' => 'Szary/śrutowanie',
             'type' => 'color',
             'value' => 'Szary/śrutowanie',
+            'image_path' => 'images/produkty/szary-srutowanie.webp',
         ]);
         ProductVariant::create([
             'product_id' => $visioKombiformat->id,
             'name' => 'Antracyt/śrutowanie',
             'type' => 'color',
             'value' => 'Antracyt/śrutowanie',
+            'image_path' => 'images/produkty/antracyt-srutowanie.webp',
         ]);
         ProductVariant::create([
             'product_id' => $visioKombiformat->id,
             'name' => 'Biały/monocolor',
             'type' => 'color',
             'value' => 'Biały/monocolor',
+            'image_path' => 'images/produkty/biel-mono.webp',
         ]);
         ProductVariant::create([
             'product_id' => $visioKombiformat->id,
             'name' => 'Szary/monocolor',
             'type' => 'color',
             'value' => 'Szary/monocolor',
+            'image_path' => 'images/produkty/szary-mono.webp',
         ]);
         ProductVariant::create([
             'product_id' => $visioKombiformat->id,
             'name' => 'Antracyt/monocolor',
             'type' => 'color',
             'value' => 'Antracyt/monocolor',
+            'image_path' => 'images/produkty/monocolor-antracyt.webp',
         ]);
         ProductVariant::create([
             'product_id' => $visioKombiformat->id,
             'name' => 'Ciepły popiel/color-mix',
             'type' => 'color',
             'value' => 'Ciepły popiel/color-mix',
+            'image_path' => 'images/produkty/color-mix-cieply-popiel.webp',
         ]);
         ProductVariant::create([
             'product_id' => $visioKombiformat->id,
             'name' => 'Szara umbra/color-mix',
             'type' => 'color',
             'value' => 'Szara umbra/color-mix',
+            'image_path' => 'images/produkty/color-mix-szara-umbra.webp',
         ]);
         ProductVariant::create([
             'product_id' => $visioKombiformat->id,
             'name' => 'Zimny popiel/color-mix',
             'type' => 'color',
             'value' => 'Zimny popiel/color-mix',
+            'image_path' => 'images/produkty/color-mix-zimny-popiel.webp',
         ]);
         ProductVariant::create([
             'product_id' => $visioKombiformat->id,
             'name' => 'Coffee mocha / color-mix / antic',
             'type' => 'color',
             'value' => 'Coffee mocha / color-mix / antic',
+            'image_path' => 'images/produkty/color-mix-coffee-mocha.webp',
         ]);
         ProductVariant::create([
             'product_id' => $visioKombiformat->id,
             'name' => 'Tycjan/color mix',
             'type' => 'color',
             'value' => 'Tycjan/color mix',
+            'image_path' => 'images/produkty/color-mix-tycjan.webp',
         ]);
         ProductVariant::create([
             'product_id' => $visioKombiformat->id,
             'name' => 'Labrador beż / color-mix',
             'type' => 'color',
             'value' => 'Labrador beż / color-mix',
+            'image_path' => 'images/produkty/color-mix-labrador-bez.webp',
         ]);
         ProductVariant::create([
             'product_id' => $visioKombiformat->id,
             'name' => 'Słony karmel / color-mix',
             'type' => 'color',
             'value' => 'Słony karmel / color-mix',
+            'image_path' => 'images/produkty/color-mix-slony-karmel.webp',
         ]);
         ProductVariant::create([
             'product_id' => $visioKombiformat->id,
             'name' => 'Zachód słońca / color-mix',
             'type' => 'color',
             'value' => 'Zachód słońca / color-mix',
+            'image_path' => 'images/produkty/color-mix-zachod-slonca.webp',
         ]);
         ProductVariant::create([
             'product_id' => $visioKombiformat->id,
             'name' => 'Złota aleja / color-mix',
             'type' => 'color',
             'value' => 'Złota aleja / color-mix',
+            'image_path' => 'images/produkty/color-mix-zlota-aleja.webp',
         ]);
         ProductVariant::create([
             'product_id' => $visioKombiformat->id,
@@ -862,72 +948,84 @@ class ProductVariantSeeder extends Seeder
             'name' => 'Biały/śrutowanie',
             'type' => 'color',
             'value' => 'Biały/śrutowanie',
+            'image_path' => 'images/produkty/biel-srutowanie.webp',
         ]);
         ProductVariant::create([
             'product_id' => $imperio->id,
             'name' => 'Szary/śrutowanie',
             'type' => 'color',
             'value' => 'Szary/śrutowanie',
+            'image_path' => 'images/produkty/szary-srutowanie.webp',
         ]);
         ProductVariant::create([
             'product_id' => $imperio->id,
             'name' => 'Antracyt/śrutowanie',
             'type' => 'color',
             'value' => 'Antracyt/śrutowanie',
+            'image_path' => 'images/produkty/antracyt-srutowanie.webp',
         ]);
         ProductVariant::create([
             'product_id' => $imperio->id,
             'name' => 'Ciepły popiel/color-mix',
             'type' => 'color',
             'value' => 'Ciepły popiel/color-mix',
+            'image_path' => 'images/produkty/color-mix-cieply-popiel.webp',
         ]);
         ProductVariant::create([
             'product_id' => $imperio->id,
             'name' => 'Szara umbra/color-mix',
             'type' => 'color',
             'value' => 'Szara umbra/color-mix',
+            'image_path' => 'images/produkty/color-mix-szara-umbra.webp',
         ]);
         ProductVariant::create([
             'product_id' => $imperio->id,
             'name' => 'Zimny popiel/color-mix',
             'type' => 'color',
             'value' => 'Zimny popiel/color-mix',
+            'image_path' => 'images/produkty/color-mix-zimny-popiel.webp',
         ]);
         ProductVariant::create([
             'product_id' => $imperio->id,
             'name' => 'Coffee mocha / color-mix / antic',
             'type' => 'color',
             'value' => 'Coffee mocha / color-mix / antic',
+            'image_path' => 'images/produkty/color-mix-coffee-mocha.webp',
         ]);
         ProductVariant::create([
             'product_id' => $imperio->id,
             'name' => 'Tycjan/color mix',
             'type' => 'color',
             'value' => 'Tycjan/color mix',
+            'image_path' => 'images/produkty/color-mix-tycjan.webp',
         ]);
         ProductVariant::create([
             'product_id' => $imperio->id,
             'name' => 'Labrador beż / color-mix',
             'type' => 'color',
             'value' => 'Labrador beż / color-mix',
+            'image_path' => 'images/produkty/color-mix-labrador-bez.webp',
         ]);
         ProductVariant::create([
             'product_id' => $imperio->id,
             'name' => 'Słony karmel / color-mix',
             'type' => 'color',
             'value' => 'Słony karmel / color-mix',
+            'image_path' => 'images/produkty/color-mix-slony-karmel.webp',
         ]);
         ProductVariant::create([
             'product_id' => $imperio->id,
             'name' => 'Zachód słońca / color-mix',
             'type' => 'color',
             'value' => 'Zachód słońca / color-mix',
+            'image_path' => 'images/produkty/color-mix-zachod-slonca.webp',
         ]);
         ProductVariant::create([
             'product_id' => $imperio->id,
             'name' => 'Złota aleja / color-mix',
             'type' => 'color',
             'value' => 'Złota aleja / color-mix',
+            'image_path' => 'images/produkty/color-mix-zlota-aleja.webp',
         ]);
         
         // --------------------------------
@@ -956,72 +1054,84 @@ class ProductVariantSeeder extends Seeder
             'name' => 'Biały/śrutowanie',
             'type' => 'color',
             'value' => 'Biały/śrutowanie',
+            'image_path' => 'images/produkty/biel-srutowanie.webp',
         ]);
         ProductVariant::create([
             'product_id' => $brukSwidnicki->id,
             'name' => 'Szary/śrutowanie',
             'type' => 'color',
             'value' => 'Szary/śrutowanie',
+            'image_path' => 'images/produkty/szary-srutowanie.webp',
         ]);
         ProductVariant::create([
             'product_id' => $brukSwidnicki->id,
             'name' => 'Antracyt/śrutowanie',
             'type' => 'color',
             'value' => 'Antracyt/śrutowanie',
+            'image_path' => 'images/produkty/antracyt-srutowanie.webp',
         ]);
         ProductVariant::create([
             'product_id' => $brukSwidnicki->id,
             'name' => 'Ciepły popiel/color-mix',
             'type' => 'color',
             'value' => 'Ciepły popiel/color-mix',
+            'image_path' => 'images/produkty/color-mix-cieply-popiel.webp',
         ]);
         ProductVariant::create([
             'product_id' => $brukSwidnicki->id,
             'name' => 'Szara umbra/color-mix',
             'type' => 'color',
             'value' => 'Szara umbra/color-mix',
+            'image_path' => 'images/produkty/color-mix-szara-umbra.webp',
         ]);
         ProductVariant::create([
             'product_id' => $brukSwidnicki->id,
             'name' => 'Zimny popiel/color-mix',
             'type' => 'color',
             'value' => 'Zimny popiel/color-mix',
+            'image_path' => 'images/produkty/color-mix-zimny-popiel.webp',
         ]);
         ProductVariant::create([
             'product_id' => $brukSwidnicki->id,
             'name' => 'Coffee mocha / color-mix / antic',
             'type' => 'color',
             'value' => 'Coffee mocha / color-mix / antic',
+            'image_path' => 'images/produkty/color-mix-coffee-mocha.webp',
         ]);
         ProductVariant::create([
             'product_id' => $brukSwidnicki->id,
             'name' => 'Tycjan/color mix',
             'type' => 'color',
             'value' => 'Tycjan/color mix',
+            'image_path' => 'images/produkty/color-mix-tycjan.webp',
         ]);
         ProductVariant::create([
             'product_id' => $brukSwidnicki->id,
             'name' => 'Labrador beż / color-mix',
             'type' => 'color',
             'value' => 'Labrador beż / color-mix',
+            'image_path' => 'images/produkty/color-mix-labrador-bez.webp',
         ]);
         ProductVariant::create([
             'product_id' => $brukSwidnicki->id,
             'name' => 'Słony karmel / color-mix',
             'type' => 'color',
             'value' => 'Słony karmel / color-mix',
+            'image_path' => 'images/produkty/color-mix-slony-karmel.webp',
         ]);
         ProductVariant::create([
             'product_id' => $brukSwidnicki->id,
             'name' => 'Zachód słońca / color-mix',
             'type' => 'color',
             'value' => 'Zachód słońca / color-mix',
+            'image_path' => 'images/produkty/color-mix-zachod-slonca.webp',
         ]);
         ProductVariant::create([
             'product_id' => $brukSwidnicki->id,
             'name' => 'Złota aleja / color-mix',
             'type' => 'color',
             'value' => 'Złota aleja / color-mix',
+            'image_path' => 'images/produkty/color-mix-zlota-aleja.webp',
         ]);
         ProductVariant::create([
             'product_id' => $brukSwidnicki->id,

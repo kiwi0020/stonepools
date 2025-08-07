@@ -46,7 +46,7 @@
 
     <main id="home-page">
 
-        <section class="container-col gen-padding width-100 paralax" style="background-image: url('{{asset('images/baseny-bg.png')}}'); height: 50vh;">
+        <section class="container-col gen-padding width-100 paralax" style="background-image: url('{{ asset('images/baseny-bg.png') }}'); height: 50vh;">
             <h1 class="h-semi font-white"> {{$category->name}} </h1>
         </section>
 
@@ -74,9 +74,9 @@
                                 'subcategorySlug' => $subcategory->slug,
                                 'productSlug' => $product->slug
                             ]) }}" class="width-100">
-                            <div class="container-row product-card width-100">
+                            <div class="container-row product-card width-100 gap-32">
                                 <div class="container-col product-card-image">
-                                    
+                                    <img src="{{ asset( $product->image_path ) }}" alt="">
                                 </div>
                                 <div class="container-col al-items-start gap-32">
                                     <div class="container-col al-items-start gap-8">

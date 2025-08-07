@@ -1,0 +1,8 @@
+@use '../variables' as *;
+
+.alert{
+    >p{
+        font-size: 2rem;
+        color: $confirm;
+    }
+}
