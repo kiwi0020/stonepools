@@ -1,11 +1,26 @@
 @use '../variables' as *;
 
+// Strona kategorii i podkategorii
+
+.categories-page-container{
+    padding: 64px 128px;
+
+    @media all and (max-width:1100px){
+        padding: 64px 24px;    
+    }
+    @media all and (max-width:900px){
+        padding: 64px 8px;
+    }
+}   
+
 // Strona produktu
 
 .product-route{
     a, span{
         font-family: $header-font;
     }
+
+    
 }
 
 .product-page-product-card{

@@ -98,8 +98,95 @@ class ProductSeeder extends Seeder
             'name' => 'Basen "Portugal',
             'slug' => 'basen-portugal',
             'description' => '',
+            'image_path' => 'images/produkty/basen-portugal.png',
             'subcategory_id' => $baseny->id,
         ]);
+        Product::create([
+            'name' => 'Basen "Eclipse',
+            'slug' => 'basen-eclipse',
+            'description' => '',
+            'image_path' => 'images/produkty/basen-eclipse.png',
+            'subcategory_id' => $baseny->id,
+        ]);
+        Product::create([
+            'name' => 'Basen "Italien',
+            'slug' => 'basen-italien',
+            'description' => '',
+            'image_path' => 'images/produkty/basen-italien.png',
+            'subcategory_id' => $baseny->id,
+        ]);
+        Product::create([
+            'name' => 'Basen "Nightfall',
+            'slug' => 'basen-nightfall',
+            'description' => '',
+            'image_path' => 'images/produkty/basen-nightfall.png',
+            'subcategory_id' => $baseny->id,
+        ]);
+        Product::create([
+            'name' => 'Basen "Spain',
+            'slug' => 'basen-spain',
+            'description' => '',
+            'image_path' => 'images/produkty/basen-spain.png',
+            'subcategory_id' => $baseny->id,
+        ]);
+        Product::create([
+            'name' => 'Basen "Sunrise',
+            'slug' => 'basen-sunrise',
+            'description' => '',
+            'image_path' => 'images/produkty/basen-sunrise.png',
+            'subcategory_id' => $baseny->id,
+        ]);
+        Product::create([
+            'name' => 'Basen "Twilight',
+            'slug' => 'basen-twilight',
+            'description' => '',
+            'image_path' => 'images/produkty/basen-twilight.png',
+            'subcategory_id' => $baseny->id,
+        ]);
+        Product::create([
+            'name' => 'Basen "Aurora',
+            'slug' => 'basen-aurora',
+            'description' => '',
+            'image_path' => 'images/produkty/basen-aurora.png',
+            'subcategory_id' => $baseny->id,
+        ]);
+        Product::create([
+            'name' => 'Basen "Australia',
+            'slug' => 'basen-australia',
+            'description' => '',
+            'image_path' => 'images/produkty/basen-australia.png',
+            'subcategory_id' => $baseny->id,
+        ]);
+        Product::create([
+            'name' => 'Basen "Cuba',
+            'slug' => 'basen-cuba',
+            'description' => '',
+            'image_path' => 'images/produkty/basen-cuba.png',
+            'subcategory_id' => $baseny->id,
+        ]);
+        Product::create([
+            'name' => 'Basen "Midnight',
+            'slug' => 'basen-midnight',
+            'description' => '',
+            'image_path' => 'images/produkty/basen-midnight.png',
+            'subcategory_id' => $baseny->id,
+        ]);
+        Product::create([
+            'name' => 'Basen "Orion',
+            'slug' => 'basen-orion',
+            'description' => '',
+            'image_path' => 'images/produkty/basen-orion.png',
+            'subcategory_id' => $baseny->id,
+        ]);
+        Product::create([
+            'name' => 'Basen "Phoebus',
+            'slug' => 'basen-phoebus',
+            'description' => '',
+            'image_path' => 'images/produkty/basen-phoebus.png',
+            'subcategory_id' => $baseny->id,
+        ]);
+
+        
 
         Product::create([
             'name' => 'Zadaszenie "Eco Classic',

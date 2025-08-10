@@ -72,13 +72,11 @@
 
         <section class="container-row gen-padding width-100 flex-con-md-32 gap-32 wrap al-items-start product-page-product-card">
             <div class="container-row wrap al-items-start ">
-                <img class="width-40" src="{{ asset($product->image_path) }}" alt="Zdjęcie produktu">
-                <img class="width-40" src="{{ asset($product->image_path) }}" alt="Zdjęcie produktu">
-                <img class="width-40" src="{{ asset($product->image_path) }}" alt="Zdjęcie produktu">
+                <img class="width-80" src="{{ asset($product->image_path) }}" alt="Zdjęcie produktu">
                 
             </div>
             <div class="container-col al-items-start gap-32 padding-32">
-                <h2 class="h-semi">{{ $product->name }}</h2>
+                <h1 class="h-semi">{{ $product->name }}</h1>
                 <p>{{ $product->description }}</p>
                 
 
@@ -93,8 +91,8 @@
 
 
                     @if ($product->variants->where('type', 'size')->isNotEmpty())
-                        <h3 class="h-reg">Rozmiar</h3>
-                        <div class="container-row product-size">
+                        <h3 class="h-semi">Rozmiar</h3>
+                        <div class="container-row product-size gap-8">
                             @foreach ($product->variants->where('type', 'size') as $variant)
                                 <div>
                                     <input type="radio" id="size_{{ $variant->id }}" name="size_variant_id" value="{{ $variant->id }}" required>
@@ -107,8 +105,8 @@
                     <hr>
 
                     @if ($product->variants->where('type', 'color')->isNotEmpty())
-                        <h3 class="h-reg">Kolor</h3>
-                        <div class="container-row wrap jus-con-start product-color">
+                        <h3 class="h-semi">Kolor</h3>
+                        <div class="container-row wrap jus-con-start product-color gap-8">
                             @foreach ($product->variants->where('type', 'color') as $variant)
                                 <div >
                                     <input type="radio" id="color_{{ $variant->id }}" name="color_variant_id" value="{{ $variant->id }}" required>
@@ -137,7 +135,7 @@
 
     <!-- JavaScript -->
 
-    <script src="{{ asset('js/navbar.js') }}"></script>
+    <script src="{{ asset('js/navbar-dif.js') }}"></script>
     <script src="{{ asset('js/functions.js') }}"></script>
 
 </body>

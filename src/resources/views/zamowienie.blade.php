@@ -82,37 +82,45 @@
                 </div>
 
                  <div class="container-col al-items-start gap-64">
-                    @if(count($order))
-                        @foreach($order as $index => $item)
-                            <div class="container-row width-100 gap-32 jus-con-start">
-                                <div>
-                                    <img src="{{ $item['image_path'] }}" alt="">
+                    <div class="container-col gap-16 al-items-start">
+                        @if(count($order))
+                            @foreach($order as $index => $item)
+                                <div class="container-row width-100 gap-32 jus-con-btwn form-product">
+                                    <div class="container-row width-100 gap-32">
+                                        <div>
+                                            @if(isset($item['image_path']))
+                                                <img width="100" src="{{ asset($item['image_path']) }}" alt="Zdjęcie produktu">
+                                            @endif
+                                        </div>
+                                        <div class="container-col al-items-start gap-24">
+                                            <h3 class="h-reg">{{ $item['product_name'] }}</h3>
+                                            <div class="container-col gap-0 al-items-start">
+                                                <p>Rozmiar: {{ $item['size'] ?? brak }} </p>
+                                                <p>Kolor: {{ $item['color'] ?? brak }}</p>
+                                            </div>
+
+                                            <input type="hidden" name="products[{{ $index }}][product_id]" value="{{ $item['product_id'] }}">
+                                            <input type="hidden" name="products[{{ $index }}][product_name]" value="{{ $item['product_name'] }}">
+                                            <input type="hidden" name="products[{{ $index }}][size]" value="{{ $item['size'] }}">
+                                            <input type="hidden" name="products[{{ $index }}][color]" value="{{ $item['color'] }}">
+                                            <input type="hidden" name="products[{{ $index }}][description]" value="{{ $item['description'] ?? '' }}">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <a href=" {{ route('zamowienie.usun', $index) }} " >
+                                            <img width="25" src=" {{ asset('images/trash.svg') }} " alt="">
+                                        </a>
+                                    </div>
                                 </div>
-                                <div class="container-col al-items-start">
-                                    <h3 class="h-reg">{{ $item['product_name'] }}</h3>
-                                    <p>Rozmiar: {{ $item['size'] ?? brak }} </p>
-                                    <p>Kolor: {{ $item['color'] ?? brak }}</p>
 
-                                    <input type="hidden" name="products[{{ $index }}][product_id]" value="{{ $item['product_id'] }}">
-                                    <input type="hidden" name="products[{{ $index }}][product_name]" value="{{ $item['product_name'] }}">
-                                    <input type="hidden" name="products[{{ $index }}][size]" value="{{ $item['size'] }}">
-                                    <input type="hidden" name="products[{{ $index }}][color]" value="{{ $item['color'] }}">
-                                    <input type="hidden" name="products[{{ $index }}][description]" value="{{ $item['description'] ?? '' }}">
-                                </div>
-                                <div>
-                                    <a href=" {{ route('zamowienie.usun', $index) }} " >
-                                        <img width="25" src=" {{ asset('images/trash.svg') }} " alt="">
-                                    </a>
-                                </div>
-                            </div>
-
-                        @endforeach
-                    @else
-                        <p>Brak produktów w zamówieniu.</p>
-                    @endif
+                            @endforeach
+                        @else
+                            <p>Brak produktów w zamówieniu.</p>
+                        @endif
+                    </div>
 
 
-                    <div class="container-row">
+                    <div class="container-row gap-32">
                         <button class="primary-button" type="submit">Zapytaj o produkty</button>
                         <button class="secondary-button">Kompletuj dalej</button>
                     </div>
@@ -135,7 +143,7 @@
 
     <!-- JavaScript -->
 
-    <script src="{{ asset('js/navbar.js') }}"></script>
+    <script src="{{ asset('js/navbar-dif.js') }}"></script>
     <script src="{{ asset('js/functions.js') }}"></script>
 
 </body>

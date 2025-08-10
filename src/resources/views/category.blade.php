@@ -50,7 +50,7 @@
             <h1 class="h-semi font-white"> {{$category->name}} </h1>
         </section>
 
-        <section class="container-col gen-padding width-100 al-items-start ">
+        <section class="container-col categories-page-container width-100 al-items-start ">
             <div class="dp-grid grid-categories-page width-100 al-items-start">
                 <div class="container-col al-items-start">
 

@@ -12,7 +12,7 @@
         <link rel="stylesheet" href=" {{ asset('css/harescape.css' ) }} " type="text/css">
         <!-- <link rel="stylesheet" href="https://uebhfraamh.cfolks.pl/style/harescape.css" type="text/css"> -->
 
-        <link rel="icon" href="" type="image/x-icon">
+        <link rel="icon" href=" {{ asset('favicon.webp') }}" type="image/x-icon">
     
         <!-- Canonical / Alternate -->
 
@@ -122,6 +122,12 @@
                     <img height="100" src="{{ asset('images/montaz-basenow-ikona.webp')}}" alt="">
                     <h4 class="h-semi txt-center">Montaż basenów</h4>
                 </div>
+            </div>
+        </section>
+
+        <section class="container-col gen-padding width-100 bg-white">
+            <div class="container-col padding-48 border-rds-64 pure-shadow">
+                <img class="width-100" src="{{ asset('images/baner-projekt-nawierzchni.png') }}" alt="">
             </div>
         </section>
 

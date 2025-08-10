@@ -26,6 +26,20 @@ class ProductVariantSeeder extends Seeder
         $brukSwidnicki = Product::where('slug', 'bruk-swidnicki')->first();
         $ekoKrata = Product::where('slug', 'eko-krata')->first();
 
+        $basenPortugal = Product::where('slug', 'basen-portugal')->first();
+        $basenEclipse = Product::where('slug', 'basen-eclipse')->first();
+        $basenItalien = Product::where('slug', 'basen-italien')->first();
+        $basenNightfall = Product::where('slug', 'basen-nightfall')->first();
+        $basenSpain = Product::where('slug', 'basen-spain')->first();
+        $basenSunrise = Product::where('slug', 'basen-sunrise')->first();
+        $basenTwilight = Product::where('slug', 'basen-twilight')->first();
+        $basenAurora = Product::where('slug', 'basen-aurora')->first();
+        $basenAustralia = Product::where('slug', 'basen-australia')->first();
+        $basenCuba = Product::where('slug', 'basen-cuba')->first();
+        $basenMidnight = Product::where('slug', 'basen-midnight')->first();
+        $basenOrion = Product::where('slug', 'basen-orion')->first();
+        $basenPhoebus = Product::where('slug', 'basen-phoebus')->first();
+
         // Tresso
 
         ProductVariant::create([
@@ -452,18 +466,21 @@ class ProductVariantSeeder extends Seeder
             'name' => 'Szary Classic',
             'type' => 'color',
             'value' => 'Szary Classic',
+            'image_path' => 'images/produkty/szary-classic.webp',
         ]);
         ProductVariant::create([
             'product_id' => $kostkaSudecka->id,
             'name' => 'Antracyt Classic',
             'type' => 'color',
             'value' => 'Antracyt Classic',
+            'image_path' => 'images/produkty/antracyt-classic.webp',
         ]);
         ProductVariant::create([
             'product_id' => $kostkaSudecka->id,
             'name' => 'Czerwony Classic',
             'type' => 'color',
             'value' => 'Czerwony Classic',
+            'image_path' => 'images/produkty/czerwony-classic.webp',
         ]);
 
         // ----------------------------------------
@@ -902,18 +919,21 @@ class ProductVariantSeeder extends Seeder
             'name' => 'Szary Classic',
             'type' => 'color',
             'value' => 'Szary Classic',
+            'image_path' => 'images/produkty/szary-classic.webp',
         ]);
         ProductVariant::create([
             'product_id' => $visioKombiformat->id,
             'name' => 'Antracyt Classic',
             'type' => 'color',
             'value' => 'Antracyt Classic',
+            'image_path' => 'images/produkty/antracyt-classic.webp',
         ]);
         ProductVariant::create([
             'product_id' => $visioKombiformat->id,
             'name' => 'Czerwony Classic',
             'type' => 'color',
             'value' => 'Czerwony Classic',
+            'image_path' => 'images/produkty/czerwony-classic.webp',
         ]);
 
         // --------------------------------------
@@ -1138,18 +1158,21 @@ class ProductVariantSeeder extends Seeder
             'name' => 'Szary Classic',
             'type' => 'color',
             'value' => 'Szary Classic',
+            'image_path' => 'images/produkty/szary-classic.webp',
         ]);
         ProductVariant::create([
             'product_id' => $brukSwidnicki->id,
             'name' => 'Antracyt Classic',
             'type' => 'color',
             'value' => 'Antracyt Classic',
+            'image_path' => 'images/produkty/antracyt-classic.webp',
         ]);
         ProductVariant::create([
             'product_id' => $brukSwidnicki->id,
             'name' => 'Czerwony Classic',
             'type' => 'color',
             'value' => 'Czerwony Classic',
+            'image_path' => 'images/produkty/czerwony-classic.webp',
         ]);
 
         // --------------------------------
@@ -1166,18 +1189,996 @@ class ProductVariantSeeder extends Seeder
             'name' => 'Szary Classic',
             'type' => 'color',
             'value' => 'Szary Classic',
+            'image_path' => 'images/produkty/szary-classic.webp',
         ]);
         ProductVariant::create([
             'product_id' => $ekoKrata->id,
             'name' => 'Antracyt Classic',
             'type' => 'color',
             'value' => 'Antracyt Classic',
+            'image_path' => 'images/produkty/antracyt-classic.webp',
         ]);
         ProductVariant::create([
             'product_id' => $ekoKrata->id,
             'name' => 'Czerwony Classic',
             'type' => 'color',
             'value' => 'Czerwony Classic',
+            'image_path' => 'images/produkty/czerwony-classic.webp',
+        ]);
+
+
+
+        // Warianty dla basenu "Portugal"
+        ProductVariant::create([
+            'product_id' => $basenPortugal->id,
+            'name' => '3D Niebieski',
+            'type' => 'color',
+            'value' => '3D Niebieski',
+            'image_path' => 'images/produkty/3d-niebieski.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenPortugal->id,
+            'name' => '3D Biały',
+            'type' => 'color',
+            'value' => '3D Biały',
+            'image_path' => 'images/produkty/3d-bialy.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenPortugal->id,
+            'name' => '3D Jasnoszary',
+            'type' => 'color',
+            'value' => '3D Jasnoszary',
+            'image_path' => 'images/produkty/3d-jasnoszary.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenPortugal->id,
+            'name' => '3D Ciemnoszary',
+            'type' => 'color',
+            'value' => '3D Ciemnoszary',
+            'image_path' => 'images/produkty/3d-ciemnoszary.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenPortugal->id,
+            'name' => '3D Piaskowy',
+            'type' => 'color',
+            'value' => '3D Piaskowy',
+            'image_path' => 'images/produkty/3d-piaskowy.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenPortugal->id,
+            'name' => 'Niebieski - RAL 5012',
+            'type' => 'color',
+            'value' => 'Niebieski - RAL 5012',
+            'image_path' => 'images/produkty/niebieski-ral-5012.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenPortugal->id,
+            'name' => 'Biały - RAL 9010',
+            'type' => 'color',
+            'value' => 'Biały - RAL 9010',
+            'image_path' => 'images/produkty/bialy-ral-9010.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenPortugal->id,
+            'name' => 'Szary - RAL 7035',
+            'type' => 'color',
+            'value' => 'Szary - RAL 7035',
+            'image_path' => 'images/produkty/szary-ral-7035.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenPortugal->id,
+            'name' => 'Piaskowy - RAL 1015',
+            'type' => 'color',
+            'value' => 'Piaskowy - RAL 1015',
+            'image_path' => 'images/produkty/piaskowy-ral-1015.png',
+        ]);
+
+        // -----------------------------------------------------------
+
+        // Warianty dla basenu "Eclipse"
+        ProductVariant::create([
+            'product_id' => $basenEclipse->id,
+            'name' => '3D Niebieski',
+            'type' => 'color',
+            'value' => '3D Niebieski',
+            'image_path' => 'images/produkty/3d-niebieski.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenEclipse->id,
+            'name' => '3D Biały',
+            'type' => 'color',
+            'value' => '3D Biały',
+            'image_path' => 'images/produkty/3d-bialy.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenEclipse->id,
+            'name' => '3D Jasnoszary',
+            'type' => 'color',
+            'value' => '3D Jasnoszary',
+            'image_path' => 'images/produkty/3d-jasnoszary.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenEclipse->id,
+            'name' => '3D Ciemnoszary',
+            'type' => 'color',
+            'value' => '3D Ciemnoszary',
+            'image_path' => 'images/produkty/3d-ciemnoszary.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenEclipse->id,
+            'name' => '3D Piaskowy',
+            'type' => 'color',
+            'value' => '3D Piaskowy',
+            'image_path' => 'images/produkty/3d-piaskowy.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenEclipse->id,
+            'name' => 'Niebieski - RAL 5012',
+            'type' => 'color',
+            'value' => 'Niebieski - RAL 5012',
+            'image_path' => 'images/produkty/niebieski-ral-5012.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenEclipse->id,
+            'name' => 'Biały - RAL 9010',
+            'type' => 'color',
+            'value' => 'Biały - RAL 9010',
+            'image_path' => 'images/produkty/bialy-ral-9010.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenEclipse->id,
+            'name' => 'Szary - RAL 7035',
+            'type' => 'color',
+            'value' => 'Szary - RAL 7035',
+            'image_path' => 'images/produkty/szary-ral-7035.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenEclipse->id,
+            'name' => 'Piaskowy - RAL 1015',
+            'type' => 'color',
+            'value' => 'Piaskowy - RAL 1015',
+            'image_path' => 'images/produkty/piaskowy-ral-1015.png',
+        ]);
+
+        // -----------------------------------------------------------
+
+        // Warianty dla basenu "Italien"
+        ProductVariant::create([
+            'product_id' => $basenItalien->id,
+            'name' => '3D Niebieski',
+            'type' => 'color',
+            'value' => '3D Niebieski',
+            'image_path' => 'images/produkty/3d-niebieski.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenItalien->id,
+            'name' => '3D Biały',
+            'type' => 'color',
+            'value' => '3D Biały',
+            'image_path' => 'images/produkty/3d-bialy.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenItalien->id,
+            'name' => '3D Jasnoszary',
+            'type' => 'color',
+            'value' => '3D Jasnoszary',
+            'image_path' => 'images/produkty/3d-jasnoszary.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenItalien->id,
+            'name' => '3D Ciemnoszary',
+            'type' => 'color',
+            'value' => '3D Ciemnoszary',
+            'image_path' => 'images/produkty/3d-ciemnoszary.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenItalien->id,
+            'name' => '3D Piaskowy',
+            'type' => 'color',
+            'value' => '3D Piaskowy',
+            'image_path' => 'images/produkty/3d-piaskowy.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenItalien->id,
+            'name' => 'Niebieski - RAL 5012',
+            'type' => 'color',
+            'value' => 'Niebieski - RAL 5012',
+            'image_path' => 'images/produkty/niebieski-ral-5012.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenItalien->id,
+            'name' => 'Biały - RAL 9010',
+            'type' => 'color',
+            'value' => 'Biały - RAL 9010',
+            'image_path' => 'images/produkty/bialy-ral-9010.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenItalien->id,
+            'name' => 'Szary - RAL 7035',
+            'type' => 'color',
+            'value' => 'Szary - RAL 7035',
+            'image_path' => 'images/produkty/szary-ral-7035.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenItalien->id,
+            'name' => 'Piaskowy - RAL 1015',
+            'type' => 'color',
+            'value' => 'Piaskowy - RAL 1015',
+            'image_path' => 'images/produkty/piaskowy-ral-1015.png',
+        ]);
+
+        // -----------------------------------------------------------
+
+        // Warianty dla basenu "Nightfall"
+        ProductVariant::create([
+            'product_id' => $basenNightfall->id,
+            'name' => '3D Niebieski',
+            'type' => 'color',
+            'value' => '3D Niebieski',
+            'image_path' => 'images/produkty/3d-niebieski.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenNightfall->id,
+            'name' => '3D Biały',
+            'type' => 'color',
+            'value' => '3D Biały',
+            'image_path' => 'images/produkty/3d-bialy.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenNightfall->id,
+            'name' => '3D Jasnoszary',
+            'type' => 'color',
+            'value' => '3D Jasnoszary',
+            'image_path' => 'images/produkty/3d-jasnoszary.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenNightfall->id,
+            'name' => '3D Ciemnoszary',
+            'type' => 'color',
+            'value' => '3D Ciemnoszary',
+            'image_path' => 'images/produkty/3d-ciemnoszary.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenNightfall->id,
+            'name' => '3D Piaskowy',
+            'type' => 'color',
+            'value' => '3D Piaskowy',
+            'image_path' => 'images/produkty/3d-piaskowy.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenNightfall->id,
+            'name' => 'Niebieski - RAL 5012',
+            'type' => 'color',
+            'value' => 'Niebieski - RAL 5012',
+            'image_path' => 'images/produkty/niebieski-ral-5012.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenNightfall->id,
+            'name' => 'Biały - RAL 9010',
+            'type' => 'color',
+            'value' => 'Biały - RAL 9010',
+            'image_path' => 'images/produkty/bialy-ral-9010.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenNightfall->id,
+            'name' => 'Szary - RAL 7035',
+            'type' => 'color',
+            'value' => 'Szary - RAL 7035',
+            'image_path' => 'images/produkty/szary-ral-7035.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenNightfall->id,
+            'name' => 'Piaskowy - RAL 1015',
+            'type' => 'color',
+            'value' => 'Piaskowy - RAL 1015',
+            'image_path' => 'images/produkty/piaskowy-ral-1015.png',
+        ]);
+
+        // -----------------------------------------------------------
+
+        // Warianty dla basenu "Spain"
+        ProductVariant::create([
+            'product_id' => $basenSpain->id,
+            'name' => '3D Niebieski',
+            'type' => 'color',
+            'value' => '3D Niebieski',
+            'image_path' => 'images/produkty/3d-niebieski.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenSpain->id,
+            'name' => '3D Biały',
+            'type' => 'color',
+            'value' => '3D Biały',
+            'image_path' => 'images/produkty/3d-bialy.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenSpain->id,
+            'name' => '3D Jasnoszary',
+            'type' => 'color',
+            'value' => '3D Jasnoszary',
+            'image_path' => 'images/produkty/3d-jasnoszary.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenSpain->id,
+            'name' => '3D Ciemnoszary',
+            'type' => 'color',
+            'value' => '3D Ciemnoszary',
+            'image_path' => 'images/produkty/3d-ciemnoszary.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenSpain->id,
+            'name' => '3D Piaskowy',
+            'type' => 'color',
+            'value' => '3D Piaskowy',
+            'image_path' => 'images/produkty/3d-piaskowy.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenSpain->id,
+            'name' => 'Niebieski - RAL 5012',
+            'type' => 'color',
+            'value' => 'Niebieski - RAL 5012',
+            'image_path' => 'images/produkty/niebieski-ral-5012.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenSpain->id,
+            'name' => 'Biały - RAL 9010',
+            'type' => 'color',
+            'value' => 'Biały - RAL 9010',
+            'image_path' => 'images/produkty/bialy-ral-9010.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenSpain->id,
+            'name' => 'Szary - RAL 7035',
+            'type' => 'color',
+            'value' => 'Szary - RAL 7035',
+            'image_path' => 'images/produkty/szary-ral-7035.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenSpain->id,
+            'name' => 'Piaskowy - RAL 1015',
+            'type' => 'color',
+            'value' => 'Piaskowy - RAL 1015',
+            'image_path' => 'images/produkty/piaskowy-ral-1015.png',
+        ]);
+
+        // -----------------------------------------------------------
+
+        // Warianty dla basenu "Sunrise"
+        ProductVariant::create([
+            'product_id' => $basenSunrise->id,
+            'name' => '3D Niebieski',
+            'type' => 'color',
+            'value' => '3D Niebieski',
+            'image_path' => 'images/produkty/3d-niebieski.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenSunrise->id,
+            'name' => '3D Biały',
+            'type' => 'color',
+            'value' => '3D Biały',
+            'image_path' => 'images/produkty/3d-bialy.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenSunrise->id,
+            'name' => '3D Jasnoszary',
+            'type' => 'color',
+            'value' => '3D Jasnoszary',
+            'image_path' => 'images/produkty/3d-jasnoszary.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenSunrise->id,
+            'name' => '3D Ciemnoszary',
+            'type' => 'color',
+            'value' => '3D Ciemnoszary',
+            'image_path' => 'images/produkty/3d-ciemnoszary.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenSunrise->id,
+            'name' => '3D Piaskowy',
+            'type' => 'color',
+            'value' => '3D Piaskowy',
+            'image_path' => 'images/produkty/3d-piaskowy.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenSunrise->id,
+            'name' => 'Niebieski - RAL 5012',
+            'type' => 'color',
+            'value' => 'Niebieski - RAL 5012',
+            'image_path' => 'images/produkty/niebieski-ral-5012.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenSunrise->id,
+            'name' => 'Biały - RAL 9010',
+            'type' => 'color',
+            'value' => 'Biały - RAL 9010',
+            'image_path' => 'images/produkty/bialy-ral-9010.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenSunrise->id,
+            'name' => 'Szary - RAL 7035',
+            'type' => 'color',
+            'value' => 'Szary - RAL 7035',
+            'image_path' => 'images/produkty/szary-ral-7035.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenSunrise->id,
+            'name' => 'Piaskowy - RAL 1015',
+            'type' => 'color',
+            'value' => 'Piaskowy - RAL 1015',
+            'image_path' => 'images/produkty/piaskowy-ral-1015.png',
+        ]);
+
+        // -----------------------------------------------------------
+
+        // Warianty dla basenu "Twilight"
+        ProductVariant::create([
+            'product_id' => $basenTwilight->id,
+            'name' => '3D Niebieski',
+            'type' => 'color',
+            'value' => '3D Niebieski',
+            'image_path' => 'images/produkty/3d-niebieski.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenTwilight->id,
+            'name' => '3D Biały',
+            'type' => 'color',
+            'value' => '3D Biały',
+            'image_path' => 'images/produkty/3d-bialy.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenTwilight->id,
+            'name' => '3D Jasnoszary',
+            'type' => 'color',
+            'value' => '3D Jasnoszary',
+            'image_path' => 'images/produkty/3d-jasnoszary.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenTwilight->id,
+            'name' => '3D Ciemnoszary',
+            'type' => 'color',
+            'value' => '3D Ciemnoszary',
+            'image_path' => 'images/produkty/3d-ciemnoszary.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenTwilight->id,
+            'name' => '3D Piaskowy',
+            'type' => 'color',
+            'value' => '3D Piaskowy',
+            'image_path' => 'images/produkty/3d-piaskowy.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenTwilight->id,
+            'name' => 'Niebieski - RAL 5012',
+            'type' => 'color',
+            'value' => 'Niebieski - RAL 5012',
+            'image_path' => 'images/produkty/niebieski-ral-5012.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenTwilight->id,
+            'name' => 'Biały - RAL 9010',
+            'type' => 'color',
+            'value' => 'Biały - RAL 9010',
+            'image_path' => 'images/produkty/bialy-ral-9010.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenTwilight->id,
+            'name' => 'Szary - RAL 7035',
+            'type' => 'color',
+            'value' => 'Szary - RAL 7035',
+            'image_path' => 'images/produkty/szary-ral-7035.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenTwilight->id,
+            'name' => 'Piaskowy - RAL 1015',
+            'type' => 'color',
+            'value' => 'Piaskowy - RAL 1015',
+            'image_path' => 'images/produkty/piaskowy-ral-1015.png',
+        ]);
+
+        // -----------------------------------------------------------
+
+        // Warianty dla basenu "Aurora"
+        ProductVariant::create([
+            'product_id' => $basenAurora->id,
+            'name' => '3D Niebieski',
+            'type' => 'color',
+            'value' => '3D Niebieski',
+            'image_path' => 'images/produkty/3d-niebieski.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenAurora->id,
+            'name' => '3D Biały',
+            'type' => 'color',
+            'value' => '3D Biały',
+            'image_path' => 'images/produkty/3d-bialy.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenAurora->id,
+            'name' => '3D Jasnoszary',
+            'type' => 'color',
+            'value' => '3D Jasnoszary',
+            'image_path' => 'images/produkty/3d-jasnoszary.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenAurora->id,
+            'name' => '3D Ciemnoszary',
+            'type' => 'color',
+            'value' => '3D Ciemnoszary',
+            'image_path' => 'images/produkty/3d-ciemnoszary.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenAurora->id,
+            'name' => '3D Piaskowy',
+            'type' => 'color',
+            'value' => '3D Piaskowy',
+            'image_path' => 'images/produkty/3d-piaskowy.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenAurora->id,
+            'name' => 'Niebieski - RAL 5012',
+            'type' => 'color',
+            'value' => 'Niebieski - RAL 5012',
+            'image_path' => 'images/produkty/niebieski-ral-5012.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenAurora->id,
+            'name' => 'Biały - RAL 9010',
+            'type' => 'color',
+            'value' => 'Biały - RAL 9010',
+            'image_path' => 'images/produkty/bialy-ral-9010.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenAurora->id,
+            'name' => 'Szary - RAL 7035',
+            'type' => 'color',
+            'value' => 'Szary - RAL 7035',
+            'image_path' => 'images/produkty/szary-ral-7035.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenAurora->id,
+            'name' => 'Piaskowy - RAL 1015',
+            'type' => 'color',
+            'value' => 'Piaskowy - RAL 1015',
+            'image_path' => 'images/produkty/piaskowy-ral-1015.png',
+        ]);
+
+        // -----------------------------------------------------------
+
+        // Warianty dla basenu "Australia"
+        ProductVariant::create([
+            'product_id' => $basenAustralia->id,
+            'name' => '3D Niebieski',
+            'type' => 'color',
+            'value' => '3D Niebieski',
+            'image_path' => 'images/produkty/3d-niebieski.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenAustralia->id,
+            'name' => '3D Biały',
+            'type' => 'color',
+            'value' => '3D Biały',
+            'image_path' => 'images/produkty/3d-bialy.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenAustralia->id,
+            'name' => '3D Jasnoszary',
+            'type' => 'color',
+            'value' => '3D Jasnoszary',
+            'image_path' => 'images/produkty/3d-jasnoszary.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenAustralia->id,
+            'name' => '3D Ciemnoszary',
+            'type' => 'color',
+            'value' => '3D Ciemnoszary',
+            'image_path' => 'images/produkty/3d-ciemnoszary.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenAustralia->id,
+            'name' => '3D Piaskowy',
+            'type' => 'color',
+            'value' => '3D Piaskowy',
+            'image_path' => 'images/produkty/3d-piaskowy.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenAustralia->id,
+            'name' => 'Niebieski - RAL 5012',
+            'type' => 'color',
+            'value' => 'Niebieski - RAL 5012',
+            'image_path' => 'images/produkty/niebieski-ral-5012.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenAustralia->id,
+            'name' => 'Biały - RAL 9010',
+            'type' => 'color',
+            'value' => 'Biały - RAL 9010',
+            'image_path' => 'images/produkty/bialy-ral-9010.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenAustralia->id,
+            'name' => 'Szary - RAL 7035',
+            'type' => 'color',
+            'value' => 'Szary - RAL 7035',
+            'image_path' => 'images/produkty/szary-ral-7035.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenAustralia->id,
+            'name' => 'Piaskowy - RAL 1015',
+            'type' => 'color',
+            'value' => 'Piaskowy - RAL 1015',
+            'image_path' => 'images/produkty/piaskowy-ral-1015.png',
+        ]);
+
+        // -----------------------------------------------------------
+
+        // Warianty dla basenu "Cuba"
+        ProductVariant::create([
+            'product_id' => $basenCuba->id,
+            'name' => '3D Niebieski',
+            'type' => 'color',
+            'value' => '3D Niebieski',
+            'image_path' => 'images/produkty/3d-niebieski.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenCuba->id,
+            'name' => '3D Biały',
+            'type' => 'color',
+            'value' => '3D Biały',
+            'image_path' => 'images/produkty/3d-bialy.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenCuba->id,
+            'name' => '3D Jasnoszary',
+            'type' => 'color',
+            'value' => '3D Jasnoszary',
+            'image_path' => 'images/produkty/3d-jasnoszary.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenCuba->id,
+            'name' => '3D Ciemnoszary',
+            'type' => 'color',
+            'value' => '3D Ciemnoszary',
+            'image_path' => 'images/produkty/3d-ciemnoszary.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenCuba->id,
+            'name' => '3D Piaskowy',
+            'type' => 'color',
+            'value' => '3D Piaskowy',
+            'image_path' => 'images/produkty/3d-piaskowy.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenCuba->id,
+            'name' => 'Niebieski - RAL 5012',
+            'type' => 'color',
+            'value' => 'Niebieski - RAL 5012',
+            'image_path' => 'images/produkty/niebieski-ral-5012.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenCuba->id,
+            'name' => 'Biały - RAL 9010',
+            'type' => 'color',
+            'value' => 'Biały - RAL 9010',
+            'image_path' => 'images/produkty/bialy-ral-9010.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenCuba->id,
+            'name' => 'Szary - RAL 7035',
+            'type' => 'color',
+            'value' => 'Szary - RAL 7035',
+            'image_path' => 'images/produkty/szary-ral-7035.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenCuba->id,
+            'name' => 'Piaskowy - RAL 1015',
+            'type' => 'color',
+            'value' => 'Piaskowy - RAL 1015',
+            'image_path' => 'images/produkty/piaskowy-ral-1015.png',
+        ]);
+
+        // -----------------------------------------------------------
+
+        // Warianty dla basenu "Midnight"
+        ProductVariant::create([
+            'product_id' => $basenMidnight->id,
+            'name' => '3D Niebieski',
+            'type' => 'color',
+            'value' => '3D Niebieski',
+            'image_path' => 'images/produkty/3d-niebieski.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenMidnight->id,
+            'name' => '3D Biały',
+            'type' => 'color',
+            'value' => '3D Biały',
+            'image_path' => 'images/produkty/3d-bialy.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenMidnight->id,
+            'name' => '3D Jasnoszary',
+            'type' => 'color',
+            'value' => '3D Jasnoszary',
+            'image_path' => 'images/produkty/3d-jasnoszary.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenMidnight->id,
+            'name' => '3D Ciemnoszary',
+            'type' => 'color',
+            'value' => '3D Ciemnoszary',
+            'image_path' => 'images/produkty/3d-ciemnoszary.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenMidnight->id,
+            'name' => '3D Piaskowy',
+            'type' => 'color',
+            'value' => '3D Piaskowy',
+            'image_path' => 'images/produkty/3d-piaskowy.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenMidnight->id,
+            'name' => 'Niebieski - RAL 5012',
+            'type' => 'color',
+            'value' => 'Niebieski - RAL 5012',
+            'image_path' => 'images/produkty/niebieski-ral-5012.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenMidnight->id,
+            'name' => 'Biały - RAL 9010',
+            'type' => 'color',
+            'value' => 'Biały - RAL 9010',
+            'image_path' => 'images/produkty/bialy-ral-9010.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenMidnight->id,
+            'name' => 'Szary - RAL 7035',
+            'type' => 'color',
+            'value' => 'Szary - RAL 7035',
+            'image_path' => 'images/produkty/szary-ral-7035.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenMidnight->id,
+            'name' => 'Piaskowy - RAL 1015',
+            'type' => 'color',
+            'value' => 'Piaskowy - RAL 1015',
+            'image_path' => 'images/produkty/piaskowy-ral-1015.png',
+        ]);
+
+        // -----------------------------------------------------------
+
+        // Warianty dla basenu "Orion"
+        ProductVariant::create([
+            'product_id' => $basenOrion->id,
+            'name' => '3D Niebieski',
+            'type' => 'color',
+            'value' => '3D Niebieski',
+            'image_path' => 'images/produkty/3d-niebieski.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenOrion->id,
+            'name' => '3D Biały',
+            'type' => 'color',
+            'value' => '3D Biały',
+            'image_path' => 'images/produkty/3d-bialy.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenOrion->id,
+            'name' => '3D Jasnoszary',
+            'type' => 'color',
+            'value' => '3D Jasnoszary',
+            'image_path' => 'images/produkty/3d-jasnoszary.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenOrion->id,
+            'name' => '3D Ciemnoszary',
+            'type' => 'color',
+            'value' => '3D Ciemnoszary',
+            'image_path' => 'images/produkty/3d-ciemnoszary.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenOrion->id,
+            'name' => '3D Piaskowy',
+            'type' => 'color',
+            'value' => '3D Piaskowy',
+            'image_path' => 'images/produkty/3d-piaskowy.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenOrion->id,
+            'name' => 'Niebieski - RAL 5012',
+            'type' => 'color',
+            'value' => 'Niebieski - RAL 5012',
+            'image_path' => 'images/produkty/niebieski-ral-5012.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenOrion->id,
+            'name' => 'Biały - RAL 9010',
+            'type' => 'color',
+            'value' => 'Biały - RAL 9010',
+            'image_path' => 'images/produkty/bialy-ral-9010.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenOrion->id,
+            'name' => 'Szary - RAL 7035',
+            'type' => 'color',
+            'value' => 'Szary - RAL 7035',
+            'image_path' => 'images/produkty/szary-ral-7035.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenOrion->id,
+            'name' => 'Piaskowy - RAL 1015',
+            'type' => 'color',
+            'value' => 'Piaskowy - RAL 1015',
+            'image_path' => 'images/produkty/piaskowy-ral-1015.png',
+        ]);
+
+        // -----------------------------------------------------------
+
+        // Warianty dla basenu "Phoebus"
+        ProductVariant::create([
+            'product_id' => $basenPhoebus->id,
+            'name' => '3D Niebieski',
+            'type' => 'color',
+            'value' => '3D Niebieski',
+            'image_path' => 'images/produkty/3d-niebieski.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenPhoebus->id,
+            'name' => '3D Biały',
+            'type' => 'color',
+            'value' => '3D Biały',
+            'image_path' => 'images/produkty/3d-bialy.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenPhoebus->id,
+            'name' => '3D Jasnoszary',
+            'type' => 'color',
+            'value' => '3D Jasnoszary',
+            'image_path' => 'images/produkty/3d-jasnoszary.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenPhoebus->id,
+            'name' => '3D Ciemnoszary',
+            'type' => 'color',
+            'value' => '3D Ciemnoszary',
+            'image_path' => 'images/produkty/3d-ciemnoszary.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenPhoebus->id,
+            'name' => '3D Piaskowy',
+            'type' => 'color',
+            'value' => '3D Piaskowy',
+            'image_path' => 'images/produkty/3d-piaskowy.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenPhoebus->id,
+            'name' => 'Niebieski - RAL 5012',
+            'type' => 'color',
+            'value' => 'Niebieski - RAL 5012',
+            'image_path' => 'images/produkty/niebieski-ral-5012.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenPhoebus->id,
+            'name' => 'Biały - RAL 9010',
+            'type' => 'color',
+            'value' => 'Biały - RAL 9010',
+            'image_path' => 'images/produkty/bialy-ral-9010.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenPhoebus->id,
+            'name' => 'Szary - RAL 7035',
+            'type' => 'color',
+            'value' => 'Szary - RAL 7035',
+            'image_path' => 'images/produkty/szary-ral-7035.png',
+        ]);
+
+        ProductVariant::create([
+            'product_id' => $basenPhoebus->id,
+            'name' => 'Piaskowy - RAL 1015',
+            'type' => 'color',
+            'value' => 'Piaskowy - RAL 1015',
+            'image_path' => 'images/produkty/piaskowy-ral-1015.png',
         ]);
         
     }

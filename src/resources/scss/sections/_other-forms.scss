@@ -20,4 +20,10 @@ form.zapytanie-produktowe{
     textarea{
         height: 150px;
     }
+    .form-product{
+        border: 1px solid $black5;
+        box-shadow: 0 0 16px 8px $black5;
+        padding: 24px;
+        border-radius: 24px;
+    }
 }
