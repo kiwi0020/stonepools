@@ -188,11 +188,158 @@ class ProductSeeder extends Seeder
 
         
 
+        // === Tworzenie produktów ===
+
         Product::create([
-            'name' => 'Zadaszenie "Eco Classic',
+            'name' => 'Zadaszenie "Eco Classic"',
             'slug' => 'zadaszenie-eco-classic',
-            'description' => '',
+            'description' => 'Klasyczne zadaszenie basenowe z wariantami wielkościowymi.',
             'subcategory_id' => $zadaszeniaBasenow->id,
+            'image_path' => 'images/produkty/zadaszenie-eco-classic.jpg',
+        ]);
+
+        Product::create([
+            'name' => 'Zadaszenie "Eco Standard"',
+            'slug' => 'zadaszenie-eco-standard',
+            'description' => 'Zadaszenie basenowe o standardowej wysokości, z wariantami wielkościowymi.',
+            'subcategory_id' => $zadaszeniaBasenow->id,
+            'image_path' => 'images/produkty/zadaszenie-eco-standard.png',
+        ]);
+
+        Product::create([
+            'name' => 'Zadaszenie "Prestige"',
+            'slug' => 'zadaszenie-prestige',
+            'description' => 'Niskie zadaszenie basenowe o eleganckim wyglądzie.',
+            'subcategory_id' => $zadaszeniaBasenow->id,
+            'image_path' => 'images/produkty/zadaszenie-prestige.jpg',
+        ]);
+
+         Product::create([
+            'name' => 'Zadaszenie "Prestige 90"',
+            'slug' => 'zadaszenie-prestige-90',
+            'description' => 'Zadaszenie o kącie 90 stopni, oferujące większą przestrzeń nad basenem.',
+            'subcategory_id' => $zadaszeniaBasenow->id,
+            'image_path' => 'images/produkty/zadaszenie-prestige-90.png',
+        ]);
+
+        Product::create([
+            'name' => 'Zadaszenie "Prestige 90 M"',
+            'slug' => 'zadaszenie-prestige-90-m',
+            'description' => 'Minimalistyczne zadaszenie o kącie 90 stopni, idealne do małych przestrzeni.',
+            'subcategory_id' => $zadaszeniaBasenow->id,
+            'image_path' => 'images/produkty/zadaszenie-prestige-90-m.jpg',
+        ]);
+
+        Product::create([
+            'name' => 'Zadaszenie "Prestige PLUS"',
+            'slug' => 'zadaszenie-prestige-plus',
+            'description' => 'Wysokie zadaszenie basenowe, które umożliwia swobodne poruszanie się.',
+            'subcategory_id' => $zadaszeniaBasenow->id,
+            'image_path' => 'images/produkty/zadaszenie-prestige-plus.png',
+        ]);
+
+        Product::create([
+            'name' => 'Zadaszenie "Prestige MAX"',
+            'slug' => 'zadaszenie-prestige-max',
+            'description' => 'Największe zadaszenie basenowe z serii Prestige.',
+            'subcategory_id' => $zadaszeniaBasenow->id,
+            'image_path' => 'images/produkty/zadaszenie-prestige-max.jpg',
+        ]);
+
+        Product::create([
+            'name' => 'Zadaszenie "Elegance"',
+            'slug' => 'zadaszenie-elegance',
+            'description' => 'Zadaszenie o eleganckim, nowoczesnym wyglądzie.',
+            'subcategory_id' => $zadaszeniaBasenow->id,
+            'image_path' => 'images/produkty/zadaszenie-elegance.png',
+        ]);
+
+        Product::create([
+            'name' => 'Zadaszenie Basenu Tarasowe',
+            'slug' => 'zadaszenie-basenu-tarasowe',
+            'description' => 'Zadaszenie zaprojektowane specjalnie dla tarasów, oferujące ochronę i styl.',
+            'subcategory_id' => $zadaszeniaTarasu->id,
+            'image_path' => 'images/produkty/zadaszenie-basenu-tarasowe.webp',
+        ]);
+
+        Product::create([
+            'name' => 'Zadaszenie Baseny Tarasowe Max',
+            'slug' => 'zadaszenie-basenu-tarasowe-max',
+            'description' => 'Większy model zadaszenia tarasowego, oferujący maksymalną przestrzeń.',
+            'subcategory_id' => $zadaszeniaTarasu->id,
+            'image_path' => 'images/produkty/zadaszenie-basenu-tarasowe-max.webp',
+        ]);
+
+        Product::create([
+            'name' => 'Basen Wolnostojący Nightfall',
+            'slug' => 'basen-wolnostojacy-nightfall',
+            'description' => 'Nowoczesny basen wolnostojący o eleganckim designie.',
+            'subcategory_id' => $basenyWolnostojace->id,
+            'image_path' => 'images/produkty/basen-wolnostojacy-nightfall.webp',
+        ]);
+
+        Product::create([
+            'name' => 'Basen Wolnostojący Sunrise',
+            'slug' => 'basen-wolnostojacy-sunrise',
+            'description' => 'Basen wolnostojący zaprojektowany z myślą o relaksie i wygodzie.',
+            'subcategory_id' => $basenyWolnostojace->id,
+            'image_path' => 'images/produkty/basen-wolnostojacy-sunrise.webp',
+        ]);
+
+        Product::create([
+            'name' => 'Carharbour',
+            'slug' => 'carharbour',
+            'description' => 'Elegancka wiata samochodowa o nowoczesnym designie.',
+            'subcategory_id' => $wiatySamochodowe->id,
+            'image_path' => 'images/produkty/carharbour.png',
+        ]);
+
+        Product::create([
+            'name' => 'Carharbour Plus',
+            'slug' => 'carharbour-plus',
+            'description' => 'Powiększony model wiaty Carharbour, oferujący więcej miejsca.',
+            'subcategory_id' => $wiatySamochodowe->id,
+            'image_path' => 'images/produkty/carharbour-plus.png',
+        ]);
+
+        Product::create([
+            'name' => 'CarPort Mini',
+            'slug' => 'carport-mini',
+            'description' => 'Kompaktowa wiata samochodowa, idealna do małych przestrzeni.',
+            'subcategory_id' => $wiatySamochodowe->id,
+            'image_path' => 'images/produkty/carport-mini.jpg',
+        ]);
+
+        Product::create([
+            'name' => 'CarPort Mini Plus',
+            'slug' => 'carport-mini-plus',
+            'description' => 'Większy wariant wiaty CarPort Mini.',
+            'subcategory_id' => $wiatySamochodowe->id,
+            'image_path' => 'images/produkty/carport-mini-plus.jpg',
+        ]);
+
+        Product::create([
+            'name' => 'CarPort Rear',
+            'slug' => 'carport-rear',
+            'description' => 'Wiata samochodowa przeznaczona do montażu z tyłu posesji.',
+            'subcategory_id' => $wiatySamochodowe->id,
+            'image_path' => 'images/produkty/carport-rear.png',
+        ]);
+
+        Product::create([
+            'name' => 'CarPort Rear Plus',
+            'slug' => 'carport-rear-plus',
+            'description' => 'Powiększony model wiaty CarPort Rear.',
+            'subcategory_id' => $wiatySamochodowe->id,
+            'image_path' => 'images/produkty/carport-rear-plus.png',
+        ]);
+        
+        Product::create([
+            'name' => 'Dach tarasowy',
+            'slug' => 'dach-tarasowy',
+            'description' => 'Elegancki dach tarasowy, chroniący przed słońcem i deszczem.',
+            'subcategory_id' => $dachTarasowy->id,
+            'image_path' => 'images/produkty/dach-tarasowy.webp',
         ]);
 
     }

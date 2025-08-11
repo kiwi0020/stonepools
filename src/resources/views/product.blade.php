@@ -92,7 +92,7 @@
 
                     @if ($product->variants->where('type', 'size')->isNotEmpty())
                         <h3 class="h-semi">Rozmiar</h3>
-                        <div class="container-row product-size gap-8">
+                        <div class="container-row product-size gap-8 wrap jus-con-start">
                             @foreach ($product->variants->where('type', 'size') as $variant)
                                 <div>
                                     <input type="radio" id="size_{{ $variant->id }}" name="size_variant_id" value="{{ $variant->id }}" required>
