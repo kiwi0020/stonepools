@@ -13,12 +13,14 @@ $(document).ready(function(){
                         $('header li a').css('color', '#343A40');
                     }
                     header.css("height", "80px");
+                    $('.hamburger .line').css('stroke', '#343A40');
                 } else {
                     header.css('background-color', 'white');
                     if($(window).width() > 700){
                         $('header li a').css('color', '#343A40');
                     }
                     header.css("height", "100px");
+                    $('.hamburger .line').css('stroke', 'white');
                 }
             })
 

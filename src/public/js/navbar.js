@@ -10,12 +10,15 @@ $(document).ready(function(){
                         $('header li a').css('color', '#343A40');
                     }
                     header.css("height", "80px");
+                    $('.hamburger .line').css('stroke', '#343A40');
+                    
                 } else {
                     header.css('background-color', 'transparent');
                     if($(window).width() > 700){
                         $('header li a').css('color', '#F8F9FA');
                     }
                     header.css("height", "100px");
+                    
                 }
             })
 

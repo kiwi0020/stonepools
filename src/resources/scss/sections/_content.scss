@@ -69,3 +69,25 @@
         }
     }
 }
+
+
+// Strona główna 
+
+.baner{
+    @media all and (max-width:800px){
+        &{
+            >div{
+                padding: 24px;
+                border-radius: 24px;
+            }
+        }
+    }
+    @media all and (max-width:500px){
+        &{
+            >div{
+                padding: 8px;
+                border-radius: 8px;
+            }
+        }
+    }
+}

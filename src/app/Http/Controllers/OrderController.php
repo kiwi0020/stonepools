@@ -80,6 +80,8 @@ class OrderController extends Controller
 
         Mail::to('michalwedzina@gmail.com')->send(new ZamowieniePotwierdzenieMail($order, $items));
 
+        Mail::to('fhupawelmrozinski@gmail.com')->send(new ZamowieniePotwierdzenieMail($order, $items));
+
         return redirect()->route('zamowienie.potwierdzenie')->with('success', 'Zamówienie zostało złożone.');
     }
 }

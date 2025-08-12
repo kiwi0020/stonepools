@@ -53,45 +53,45 @@
                 Twoja przeglądarka nie obsługuje tagu wideo.
             </video>
 
-            <div class="container-col gen-padding gap-32">
-                <img width="400" src="{{ asset('images/hero-logo.webp') }}" alt="Logotyp Stonepools" loading="lazy">
+            <div class="container-col gen-padding gap-32 width-100">
+                <img class="width-100" src="{{ asset('images/hero-logo.webp') }}" alt="Logotyp Stonepools" loading="lazy">
                 <h1 class="h-semi font-white txt-center">StonePools centrum kostki brukowej oraz basenów</h1>
                 <h4 class="h-reg font-white txt-center"><i>Kostka brukowa - Baseny - Zadaszenia basenów</i></h4>
             </div>
         </section>
 
         <section class="dp-grid width-100 grid-about-us-container bg-third" style="padding: 128px 32px;">
-            <div class="container-col al-items-start gap-48">
+            <div class="container-col al-items-start gap-48 width-100">
                 <h4 class="h-semi font-primary">O nas</h4>
                 <h1 class="h-reg">Stonepools centrum kostki brukowej oraz basenów</h1>
             </div>
-            <div class="container-col">
+            <div class="container-col width-100">
                 <p><strong>StonePools</strong> to firma z 7-letnim doświadczeniem, specjalizująca się w sprzedaży kostki brukowej oraz kompleksowych pracach brukarskich. Oferujemy również profesjonalny montaż basenów ogrodowych. Łączymy solidne wykonanie z estetyką wykończenia, dbając o każdy detal przestrzeni wokół domu.</p>
             </div>
-            <div class="container-col">
+            <div class="container-col width-100">
                 <p class=" font-gray">Współpracujemy z jednostkami samorządowymi, inwestorami prywatnymi oraz znanymi markami. Naszym celem jest dostarczanie trwałych rozwiązań, które są zarówno funkcjonalne, jak i estetyczne.</p>
             </div>
-            <div class="dp-grid">
-                <div class="container-col al-items-start gap-32">
-                    <div class="line-max-custom bg-black10"></div>
+            <div class="dp-grid width-100">
+                <div class="container-col al-items-start gap-32 width-100">
+                    <div class="line-max-custom bg-black5"></div>
                     <img height="100" src="{{ asset('images/icon-1-about-us.webp')}}" alt="">
-                    <div class="container-col gap-8 al-items-start">
+                    <div class="container-col gap-8 al-items-start width-100">
                         <h4 class="h-semi">Kompleksowe podejście</h4>
                         <p>Od projektu do realizacji - kostka brukowa, baseny, zadaszenia basenów.</p>
                     </div>
                 </div>
-                <div class="container-col al-items-start gap-32">
-                    <div class="line-max-custom bg-black10"></div>
+                <div class="container-col al-items-start gap-32 width-100">
+                    <div class="line-max-custom bg-black5"></div>
                     <img height="100" src="{{ asset('images/icon-2-about-us.webp')}}" alt="">
-                    <div class="container-col gap-8 al-items-start">
+                    <div class="container-col gap-8 al-items-start width-100">
                         <h4 class="h-semi">Realizacje w całym kraju</h4>
                         <p>Pracujemy z gminami, powiatami i firmami, dostosowując się do potrzeb lokalnych.</p>
                     </div>
                 </div>
-                <div class="container-col al-items-start gap-32">
-                    <div class="line-max-custom bg-black10"></div>
+                <div class="container-col al-items-start gap-32 width-100">
+                    <div class="line-max-custom bg-black5"></div>
                     <img height="100" src="{{ asset('images/icon-3-about-us.webp')}}" alt="">
-                    <div class="container-col gap-8 al-items-start">
+                    <div class="container-col gap-8 al-items-start width-100">
                         <h4 class="h-semi">Technika i estetyka</h4>
                         <p>Łączymy twarde materiały z wizją wypoczynku - od brukowych podjazdów po baseny ogrodowe.</p>
                     </div>
@@ -101,32 +101,32 @@
         </section>
 
         <section class="container-col gen-padding width-100 gap-64" style="background-color: #fff;">
-            <div class="container-col gap-16">
-                <h4 class="h-semi font-primary">Usługi</h4>
-                <h1 class="h-reg">Zakres usług</h1>
+            <div class="container-col gap-16 width-100">
+                <h4 class="h-semi font-primary width-100 txt-center">Usługi</h4>
+                <h1 class="h-semi width-100 txt-center">Zakres usług</h1>
             </div>
-            <div class="container-row width-100 flex-con-xs-24 gap-24 wrap">
-                <div class="container-col gap-32">
+            <div class="container-row width-100 flex-con-xs-24 gap-32 wrap">
+                <div class="container-col gap-24">
                     <img height="100" src="{{ asset('images/kostka-brukowa-ikona.webp')}}" alt="">
-                    <h4 class="h-semi txt-center">Sprzedaż kostki brukowej</h4>
+                    <h3 class="h-reg txt-center">Sprzedaż kostki brukowej</h3>
                 </div>
-                <div class="container-col gap-32">
+                <div class="container-col gap-24">
                     <img height="100" src="{{ asset('images/baseny-ikona.webp') }}" alt="">
-                    <h4 class="h-semi txt-center">Sprzedaż basenów</h4>
+                    <h3 class="h-reg txt-center">Sprzedaż basenów</h3>
                 </div>
-                <div class="container-col gap-32">
+                <div class="container-col gap-24">
                     <img height="100" src="{{ asset('images/prace-brukarskie-ikona.webp')}}" alt="">
-                    <h4 class="h-semi txt-center">Prace brukarskie</h4>
+                    <h3 class="h-reg txt-center">Prace brukarskie</h3>
                 </div>
-                <div class="container-col gap-32">
+                <div class="container-col gap-24">
                     <img height="100" src="{{ asset('images/montaz-basenow-ikona.webp')}}" alt="">
-                    <h4 class="h-semi txt-center">Montaż basenów</h4>
+                    <h3 class="h-reg txt-center">Montaż basenów</h3>
                 </div>
             </div>
         </section>
 
-        <section class="container-col gen-padding width-100 bg-white">
-            <div class="container-col padding-48 border-rds-64 pure-shadow">
+        <section class="container-col gen-padding width-100 bg-white baner">
+            <div class="container-col padding-48 border-rds-64 pure-shadow width-100">
                 <img class="width-100" src="{{ asset('images/baner-projekt-nawierzchni.png') }}" alt="">
             </div>
         </section>
