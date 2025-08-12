@@ -160,8 +160,8 @@
                     <h4 class="h-semi font-primary">Współpracujemy</h4>
                     <h1 class="h-reg font-white">Zbudowaliśmy silne partnerstwa, które napędzają jakość i zaufanie</h1>
                 </div>
-                <div class="container-col al-items-start gap-32">
-                    <div class="container-col al-items-start gap-32">
+                <div class="container-col al-items-start gap-32 width-100 w-liczbach">
+                    <div class="container-col al-items-start gap-32 ">
                         <div class="container-col al-items-start gap-8">
                             <p class="h-reg font-white" style="font-size: 4rem; line-height:4.2rem;">245+</p>
                             <p class="font-gray">Zrealizowanych inwestycji w Polsce.</p>
