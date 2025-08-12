@@ -91,6 +91,191 @@ class ProductSeeder extends Seeder
             'image_path' => 'images/produkty/eko-krata.webp',
             'subcategory_id' => $szlachetna->id,
         ]);
+        Product::create([
+            'name' => 'Kostka Favo',
+            'slug' => 'kostka-favo',
+            'description' => 'Niezwykły kształt sprawia, że jest kostka jest niezwykle popularna zarówno w aranżacjach przestrzeni publicznej jak i domowej!',
+            'image_path' => 'images/produkty/kostka-favo.webp',
+            'subcategory_id' => $szlachetna->id,
+        ]);
+        Product::create([
+            'name' => 'Kostka Trylinka',
+            'slug' => 'kostka-trylinka',
+            'description' => 'Doskonała dla osób szukających trwałych, prostych rozwiązań, które doskonale sprawdzą się przez wiele lat!',
+            'image_path' => 'images/produkty/kostka-trylinka.webp',
+            'subcategory_id' => $szlachetna->id,
+        ]);
+        Product::create([
+            'name' => 'Kostka Wodoprzepuszczalna',
+            'slug' => 'kostka-wodoprzepuszczalna',
+            'description' => 'Produkt dla osób, które chcą działać proekologicznie, ale szukają produktów, które pozwolą osiągnąć klasyczny wygląd przestrzeni.',
+            'image_path' => 'images/produkty/kostka-wodoprzepuszczalna.webp',
+            'subcategory_id' => $szlachetna->id,
+        ]);
+        Product::create([
+            'name' => 'Tetris 10x10',
+            'slug' => 'tetris-10x10',
+            'description' => 'Charakteryzuje ją prosty, klasyczny kształt i bogata kolorystyka, dzięki czemu doskonale wpasuje się w różne gusta.',
+            'image_path' => 'images/produkty/tetris-10x10.webp',
+            'subcategory_id' => $szlachetna->id,
+        ]);
+        Product::create([
+            'name' => 'Tetris 10x20',
+            'slug' => 'tetris-10x20',
+            'description' => 'Charakteryzuje ją prosty, klasyczny kształt i bogata kolorystyka, dzięki czemu doskonale wpasuje się w różne gusta.',
+            'image_path' => 'images/produkty/tetris-10x20.webp',
+            'subcategory_id' => $szlachetna->id,
+        ]);
+        Product::create([
+            'name' => 'Tetris 20x20',
+            'slug' => 'tetris-20x20',
+            'description' => 'Doskonała dla klientów, którzy chcą połączyć klasyczną formę z nietypową nawierzchnią i kolorystyką!',
+            'image_path' => 'images/produkty/tetris-20x20.webp',
+            'subcategory_id' => $szlachetna->id,
+        ]);
+
+
+
+        Product::create([
+            'name' => 'Płyta 100x33',
+            'slug' => 'plyta-100x33',
+            'description' => 'Idealne rozwiązanie dla osób ceniących sobie prostotę i nowoczesny wygląd.',
+            'image_path' => 'images/produkty/plyta-100x33.webp',
+            'subcategory_id' => $plytyWielkoformatowe->id,
+        ]);
+        Product::create([
+            'name' => 'Płyta 120x60',
+            'slug' => 'plyta-120x60',
+            'description' => 'Duży format i efektowne wykończenie sprawiają, że to idealne rozwiązanie do dużych, efektownych przestrzeni!',
+            'image_path' => 'images/produkty/plyta-120x60.webp',
+            'subcategory_id' => $plytyWielkoformatowe->id,
+        ]);
+        Product::create([
+            'name' => 'Płyta 35x35',
+            'slug' => 'plyta-35x35',
+            'description' => 'Łączy w sobie prostotę i funkcjonalność co sprawia, że idealnie nadaje się do aranżacji domowych przestrzeni!',
+            'image_path' => 'images/produkty/plyta-35x35.webp',
+            'subcategory_id' => $plytyWielkoformatowe->id,
+        ]);
+        Product::create([
+            'name' => 'Płyta 50x50',
+            'slug' => 'plyta-50x50',
+            'description' => 'Doskonała do tworzenia przestrzeni nawierzchni, które mają być proste i pozbawione dodatkowych ozdobników.',
+            'image_path' => 'images/produkty/plyta-50x50.webp',
+            'subcategory_id' => $plytyWielkoformatowe->id,
+        ]);
+        Product::create([
+            'name' => 'Płyta 60x60',
+            'slug' => 'plyta-60x60',
+            'description' => 'Doskonałe rozwiązanie dla osób szukających trwałych, prostych ale niebanalnych rozwiązań!',
+            'image_path' => 'images/produkty/plyta-60x60.webp',
+            'subcategory_id' => $plytyWielkoformatowe->id,
+        ]);
+        Product::create([
+            'name' => 'Płyta 67x33',
+            'slug' => 'plyta-67x33',
+            'description' => 'Doskonałe rozwiązanie przy tworzeniu prostych, surowych aranżacji.',
+            'image_path' => 'images/produkty/plyta-67x33.webp',
+            'subcategory_id' => $plytyWielkoformatowe->id,
+        ]);
+        Product::create([
+            'name' => 'Płyta 80x80',
+            'slug' => 'plyta-80x80',
+            'description' => 'Doskonała do tworzenia przestrzeni, które mają cechować się prostotą i funkcjonalnością bez dodatkowych ozdób.',
+            'image_path' => 'images/produkty/plyta-80x80.webp',
+            'subcategory_id' => $plytyWielkoformatowe->id,
+        ]);
+        Product::create([
+            'name' => 'Płyta Tetris 80x20',
+            'slug' => 'plyta-tetris-80x20',
+            'description' => 'Klasyczny kształt i nietypowy format idealnie wpisują się w modernistyczne trendy.',
+            'image_path' => 'images/produkty/plyta-tetris-80x20.webp',
+            'subcategory_id' => $plytyWielkoformatowe->id,
+        ]);
+        Product::create([
+            'name' => 'Rubio',
+            'slug' => 'rubio',
+            'description' => 'Nietypowy kształt i klasyczne wykończenie sprawiają, że jest to produkt bardzo uniwersalny!',
+            'image_path' => 'images/produkty/rubio.webp',
+            'subcategory_id' => $plytyWielkoformatowe->id,
+        ]);
+        
+
+
+
+        Product::create([
+            'name' => 'Płyta ceramiczna 40x120',
+            'slug' => 'plyta-ceramiczna-40x120',
+            'description' => 'Elegancka i niepowtarzalna płyta, która idealnie dopełni stylowy i nowoczesny projekt',
+            'image_path' => 'images/produkty/plyta-ceramiczna-40x120.webp',
+            'subcategory_id' => $pebekCeramik->id,
+        ]);
+        Product::create([
+            'name' => 'Płyta ceramiczna 45x90',
+            'slug' => 'plyta-ceramiczna-45x90',
+            'description' => 'Łączy w sobie prostotę i funkcjonalność co sprawia, że idealnie nadaje się do aranżacji domowych przestrzeni!',
+            'image_path' => 'images/produkty/plyta-ceramiczna-45x90.webp',
+            'subcategory_id' => $pebekCeramik->id,
+        ]);
+        Product::create([
+            'name' => 'Płyta ceramiczna 50x100',
+            'slug' => 'plyta-ceramiczna-50x100',
+            'description' => 'Duży format to idealne rozwiązanie do dużych, efektownych przestrzeni!',
+            'image_path' => 'images/produkty/plyta-ceramiczna-50x100.webp',
+            'subcategory_id' => $pebekCeramik->id,
+        ]);
+        Product::create([
+            'name' => 'Płyta ceramiczna 60x120',
+            'slug' => 'plyta-ceramiczna-60x120',
+            'description' => 'Elegancka i niepowtarzalna. Nietypowe zestawienia kolorystyczne sprawiają, że płyta idealnie dopełni stylowy i nowoczesny projekt!',
+            'image_path' => 'images/produkty/plyta-ceramiczna-60x120.webp',
+            'subcategory_id' => $pebekCeramik->id,
+        ]);
+        Product::create([
+            'name' => 'Płyta ceramiczna 60x60',
+            'slug' => 'plyta-ceramiczna-60x60',
+            'description' => 'Łączy w sobie prostotę i funkcjonalność co sprawia, że idealnie nadaje się do aranżacji domowych przestrzeni!',
+            'image_path' => 'images/produkty/plyta-ceramiczna-60x60.webp',
+            'subcategory_id' => $pebekCeramik->id,
+        ]);
+        Product::create([
+            'name' => 'Płyta ceramiczna 80x80',
+            'slug' => 'plyta-ceramiczna-80x80',
+            'description' => 'Duży format idealnie sprawdzi się na nawierzchnie miejskich placów, chodników czy przy nowoczesnych budynkach!',
+            'image_path' => 'images/produkty/plyta-ceramiczna-80x80.webp',
+            'subcategory_id' => $pebekCeramik->id,
+        ]);
+
+
+
+        Product::create([
+            'name' => 'Murek Valla',
+            'slug' => 'murek-valla',
+            'description' => 'Doskonale sprawdzi się jako funkcjonalny i elegancki element ogrodów oraz miejskich przestrzeni.',
+            'image_path' => 'images/produkty/murek-valla.webp',
+            'subcategory_id' => $ogrodzenia->id,
+        ]);
+        Product::create([
+            'name' => 'Ścianka Ażurowa',
+            'slug' => 'scianka-azurowa',
+            'description' => 'Unikalny kształt oraz forma pozwalają na tworzenie eleganckich przesłon zarówno wewnątrz jak i zewnątrz budynku.',
+            'image_path' => 'images/produkty/scianka-azurowa.webp',
+            'subcategory_id' => $ogrodzenia->id,
+        ]);
+        Product::create([
+            'name' => 'Ścianka Palisadowa GRC 100x40x8',
+            'slug' => 'scianka-palisadowa-grc-100x40x8',
+            'description' => 'Doskonale sprawdzi się przy tworzeniu donic, kształtowaniu linii brzegowych schodów, ścieżek i tarasów.',
+            'image_path' => 'images/produkty/scianka-palisadowa-grc-100x40x8.webp',
+            'subcategory_id' => $ogrodzenia->id,
+        ]);
+        Product::create([
+            'name' => 'Ścianka Palisadowa GRC 60x40x8',
+            'slug' => 'scianka-palisadowa-grc-60x40x8',
+            'description' => 'Doskonale sprawdzi się przy tworzeniu donic, kształtowaniu linii brzegowych schodów, ścieżek i tarasów.',
+            'image_path' => 'images/produkty/scianka-palisadowa-grc-60x40x8.webp',
+            'subcategory_id' => $ogrodzenia->id,
+        ]);
 
 
 
