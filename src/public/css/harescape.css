@@ -1767,6 +1767,16 @@ form.zapytanie-produktowe .form-product {
   width: 100%;
   border-radius: 16px;
 }
+@media all and (max-width: 700px) {
+  .product-card > div.product-card-image {
+    width: 200px;
+  }
+}
+@media all and (max-width: 550px) {
+  .product-card > div.product-card-image {
+    width: 150px;
+  }
+}
 .product-card > div:nth-child(2) {
   width: calc(100% - 250px);
 }
@@ -1775,6 +1785,15 @@ form.zapytanie-produktowe .form-product {
 }
 .product-card:hover {
   box-shadow: 0 0 16px 8px rgba(52, 58, 64, 0.0509803922);
+}
+@media all and (max-width: 500px) {
+  .product-card {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .product-card > div:nth-child(2) {
+    width: 100%;
+  }
 }
 
 * {

@@ -18,6 +18,7 @@ $(document).ready(function(){
                         $('header li a').css('color', '#F8F9FA');
                     }
                     header.css("height", "100px");
+                    $('.hamburger .line').css('stroke', 'white');
                     
                 }
             })

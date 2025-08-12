@@ -5,6 +5,7 @@ $(document).ready(function(){
 
             $('nav a').css('color', '#343A40');
             header.css('background-color', 'white');
+             $('.hamburger .line').css('stroke', '#343A40');
 
             $(window).scroll(function(){
                 if($(this).scrollTop() > 200){
@@ -20,7 +21,7 @@ $(document).ready(function(){
                         $('header li a').css('color', '#343A40');
                     }
                     header.css("height", "100px");
-                    $('.hamburger .line').css('stroke', 'white');
+                    $('.hamburger .line').css('stroke', '#343A40');
                 }
             })
 

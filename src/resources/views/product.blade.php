@@ -49,7 +49,7 @@
         @if(session('success'))
             <div class="alert gen-padding container-col gap-32 bg-black5">
                 <p><strong>{{ session('success') }}</strong></p>
-                <div class="container-row gap-24">
+                <div class="container-row gap-24 wrap">
                     <a href="{{ url()->current() }}"><button class="secondary-button">Kontynuuj zakupy</button></a>
                     <a href="{{ route('zamowienie') }}"><button class="primary-button">Przejdź do zamówienia</button></a>
                 </div>
