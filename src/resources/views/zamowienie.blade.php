@@ -86,25 +86,23 @@
                         @if(count($order))
                             @foreach($order as $index => $item)
                                 <div class="container-row width-100 gap-32 jus-con-btwn form-product">
-                                    <div class="container-row width-100 gap-32">
-                                        <div>
-                                            @if(isset($item['image_path']))
-                                                <img width="100" src="{{ asset($item['image_path']) }}" alt="Zdjęcie produktu">
-                                            @endif
+                                    <div>
+                                        @if(isset($item['image_path']))
+                                            <img width="100" src="{{ asset($item['image_path']) }}" alt="Zdjęcie produktu">
+                                        @endif
+                                    </div>
+                                    <div class="container-col al-items-start gap-24">
+                                        <h3 class="h-reg">{{ $item['product_name'] }}</h3>
+                                        <div class="container-col gap-0 al-items-start">
+                                            <p>Rozmiar: {{ $item['size'] ?? brak }} </p>
+                                            <p>Kolor: {{ $item['color'] ?? brak }}</p>
                                         </div>
-                                        <div class="container-col al-items-start gap-24">
-                                            <h3 class="h-reg">{{ $item['product_name'] }}</h3>
-                                            <div class="container-col gap-0 al-items-start">
-                                                <p>Rozmiar: {{ $item['size'] ?? brak }} </p>
-                                                <p>Kolor: {{ $item['color'] ?? brak }}</p>
-                                            </div>
 
-                                            <input type="hidden" name="products[{{ $index }}][product_id]" value="{{ $item['product_id'] }}">
-                                            <input type="hidden" name="products[{{ $index }}][product_name]" value="{{ $item['product_name'] }}">
-                                            <input type="hidden" name="products[{{ $index }}][size]" value="{{ $item['size'] }}">
-                                            <input type="hidden" name="products[{{ $index }}][color]" value="{{ $item['color'] }}">
-                                            <input type="hidden" name="products[{{ $index }}][description]" value="{{ $item['description'] ?? '' }}">
-                                        </div>
+                                        <input type="hidden" name="products[{{ $index }}][product_id]" value="{{ $item['product_id'] }}">
+                                        <input type="hidden" name="products[{{ $index }}][product_name]" value="{{ $item['product_name'] }}">
+                                        <input type="hidden" name="products[{{ $index }}][size]" value="{{ $item['size'] }}">
+                                        <input type="hidden" name="products[{{ $index }}][color]" value="{{ $item['color'] }}">
+                                        <input type="hidden" name="products[{{ $index }}][description]" value="{{ $item['description'] ?? '' }}">
                                     </div>
                                     <div>
                                         <a href=" {{ route('zamowienie.usun', $index) }} " >
