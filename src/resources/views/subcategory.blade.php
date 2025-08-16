@@ -46,7 +46,7 @@
 
     <main id="home-page">
 
-        <section class="container-col gen-padding width-100 paralax" style="background-image: url('{{asset('images/'.$subcategory->slug.'-bg.jpg')}}'); height: 50vh;">
+        <section class="container-col gen-padding width-100 paralax" style="background-image: url('{{asset('images/'.$subcategory->slug.'-bg.png')}}'); height: 50vh;">
             <h1 class="h-semi font-white"> {{$subcategory->name}} </h1>
         </section>
 
