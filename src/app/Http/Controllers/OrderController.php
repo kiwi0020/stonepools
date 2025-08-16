@@ -58,6 +58,7 @@ class OrderController extends Controller
             'last_name' => 'required|string',
             'phone' => 'required|string',
             'email' => 'required|email',
+            'wiadomosc' => 'string',
         ]);
 
         $order = Order::create($orderData);

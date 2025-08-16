@@ -29,7 +29,6 @@ Route::get('/zamowienie/potwierdzenie', function(){
     return view('zamowienie-potwierdzenie');
 })->name('zamowienie.potwierdzenie');
 
-
 Route::get('/kostka-brukowa', [CategoryController::class, 'showKostka'])->name('category.kostka');
 
 Route::get('/baseny', [CategoryController::class, 'showBaseny'])->name('category.baseny');

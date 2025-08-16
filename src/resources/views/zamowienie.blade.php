@@ -77,7 +77,7 @@
                     </div>
                     <div class="container-col al-items-start gap-8 width-100">
                         <label for="wiadomosc">Wiadomość</label>
-                        <textarea name="wiadomosc" id="wiadomosc"></textarea>
+                        <textarea name="wiadomosc" id="wiadomosc" placeholder="Wiadomość"></textarea>
                     </div>
                 </div>
 

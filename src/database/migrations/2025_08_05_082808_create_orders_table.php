@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('last_name');
             $table->string('phone');
             $table->string('email');
+            $table->text('wiadomosc');
             $table->timestamps();
         });
     }
