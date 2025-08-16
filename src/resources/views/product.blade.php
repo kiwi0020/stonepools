@@ -91,12 +91,12 @@
 
 
                     @if ($product->variants->where('type', 'size')->isNotEmpty())
-                        <h3 class="h-semi">Rozmiar</h3>
+                        <h3 class="h-semi wybrany_rozmiar">Rozmiar</h3>
                         <div class="container-row product-size gap-8 wrap jus-con-start">
                             @foreach ($product->variants->where('type', 'size') as $variant)
                                 <div>
                                     <input type="radio" id="size_{{ $variant->id }}" name="size_variant_id" value="{{ $variant->id }}" required>
-                                    <label for="size_{{ $variant->id }}"><p>{{ $variant->name }}</p></label>
+                                    <label class="wariant_rozmiaru" for="size_{{ $variant->id }}"><p>{{ $variant->name }}</p></label>
                                 </div>
                             @endforeach
                         </div>
@@ -105,12 +105,12 @@
                     <hr>
 
                     @if ($product->variants->where('type', 'color')->isNotEmpty())
-                        <h3 class="h-semi">Kolor</h3>
+                        <h3 class="h-semi wybrany_kolor">Kolor</h3>
                         <div class="container-row wrap jus-con-start product-color gap-8">
                             @foreach ($product->variants->where('type', 'color') as $variant)
                                 <div >
                                     <input type="radio" id="color_{{ $variant->id }}" name="color_variant_id" value="{{ $variant->id }}" required>
-                                    <label for="color_{{ $variant->id }}"><img width="50" height="50" src="{{asset( $variant->image_path )}}" alt="" title="{{ $variant->name }}"></label>
+                                    <label class="wariant_koloru" for="color_{{ $variant->id }}"><img width="50" height="50" src="{{asset( $variant->image_path )}}" alt="" title="{{ $variant->name }}"></label>
                                 </div>
                             @endforeach
                         </div>
