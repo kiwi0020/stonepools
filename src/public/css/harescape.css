@@ -1678,6 +1678,11 @@ section.hero > div > h1 {
   }
 }
 
+.testimonial .testimonial-slider {
+  overflow-x: scroll;
+  width: 100%;
+  padding: 16px 16px 32px 16px;
+}
 .testimonial .testimonial-prev, .testimonial .testimonial-next {
   border: 1px solid rgba(52, 58, 64, 0.1019607843);
   padding: 23px 26px 21px 26px;
@@ -1774,6 +1779,7 @@ form.zapytanie-produktowe .form-product > div:nth-child(1) > img {
   border-radius: 16px;
   background-color: #F8F9FA;
   padding: 24px 32px;
+  min-width: 300px;
 }
 
 .product-card {

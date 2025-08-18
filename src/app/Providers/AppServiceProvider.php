@@ -2,7 +2,9 @@
 
 namespace App\Providers;
 
+use Illuminate\Contracts\View\View;
 use Illuminate\Support\ServiceProvider;
+use \App\Models\Testimonial;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -19,6 +21,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        view()->composer('komponenty.sekcje.testimonials', function ($view) {
+            $view->with('testimonials', Testimonial::latest()->get());
+        });
     }
 }

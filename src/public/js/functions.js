@@ -13,4 +13,18 @@ $(document).ready(function(){
         let nowyKolor = $(this).find('img').attr('title');
         kolor.text("Kolor: " + nowyKolor);
     });
+
+
+    // Obsługa slidera z opiniami
+
+    let $slider = $('.testimonial-slider');
+    let cardWidth = $('.testimonial-card').outerWidth(true);
+
+    $('.testimonial-next').click(function() {
+        $slider.animate({scrollLeft: $slider.scrollLeft() + cardWidth}, 400);
+    });
+
+    $('.testimonial-prev').click(function() {
+        $slider.animate({scrollLeft: $slider.scrollLeft() - cardWidth}, 400);
+    });
 });

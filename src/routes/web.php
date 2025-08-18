@@ -7,6 +7,8 @@ use App\Http\Controllers\ProductController;
 use App\Models\Subcategory;
 use App\Http\Controllers\SubcategoryController;
 use App\Http\Controllers\OrderController;
+use Illuminate\Support\Facades\App;
+use App\Http\Controllers\TestimonialController;
 
 Route::get('/', function () {
     return view('home');
@@ -15,7 +17,6 @@ Route::get('/', function () {
 Route::get('/kontakt', function(){
     return view('kontakt');
 })->name('kontakt');
-
 
 Route::post('/dodaj-do-zamowienia', [OrderController::class, 'dodajDoZamowienia'])->name('dodaj.do.zamowienia');
 
